@@ -244,4 +244,6 @@ function bones_fonts() {
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
+require_once( 'cmb-functions.php' );
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
