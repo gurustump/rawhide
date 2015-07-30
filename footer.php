@@ -1,3 +1,4 @@
+			<?php if (!is_front_page()) { ?>
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="inner-footer" class="wrap cf">
@@ -23,6 +24,7 @@
 				</div>
 
 			</footer>
+			<?php } ?>
 
 		</div>
 

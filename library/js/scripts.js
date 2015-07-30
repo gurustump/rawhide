@@ -109,12 +109,56 @@ function loadGravatars() {
  * Put all your regular jQuery in here.
 */
 jQuery(document).ready(function($) {
+	var win = $(window);
 
-  /*
-   * Let's fire off the gravatar function
-   * You can remove this if you don't need it
-  */
-  loadGravatars();
+    /*
+    * Let's fire off the gravatar function
+    * You can remove this if you don't need it
+    */
+    loadGravatars();
+	
+	win.resize(function () {
+		waitForFinalEvent( function() {
+			adminBarMove = $('#wpadminbar').outerHeight()-1;
+			mobileDeviceBodyClass();
+		}, timeToWaitForLast, 'resizeWindow');
+	});
+	
+	function mobileDeviceType() {
+		if (win.width() > 1024) {
+			return false;
+		} else if (win.width() < 768) {
+			return 'mobile';
+		} else {
+			return 'tablet';
+		}
+	}
+	function mobileDeviceBodyClass() {
+		if (mobileDeviceType() == 'mobile') {
+			$('body').addClass('mobile').removeClass('tablet');
+		} else if (mobileDeviceType() == 'tablet') {
+			$('body').addClass('tablet').removeClass('mobile');
+		} else {
+			$('body').removeClass('mobile tablet');
+		}
+	}
+	mobileDeviceBodyClass();
+	
+	// Hide wp admin bar
+	var adminBarMove = $('#wpadminbar').outerHeight()-1
+	$('#wpadminbar').animate({
+		'top':'-='+adminBarMove
+	}, 2000,function() {
+	}).hover(
+		function(){
+			$('#wpadminbar').stop().css('top','0').toggleClass('wpadminbar-shown');
+		},
+		function(){
+			$('#wpadminbar').animate({
+				'top':'-='+adminBarMove
+			}, 2000).toggleClass('wpadminbar-shown');
+		}
+	).append('<div class="wpadminbar-activator"></div>');
 
 
 }); /* end of as page load scripts */

@@ -65,10 +65,41 @@ function rawhide_before_row_if_2( $field_args, $field ) {
 	}
 }
 
-add_action( 'cmb2_init', 'rawhide_register_demo_metabox' );
+add_action( 'cmb2_init', 'rawhide_register_metaboxes' );
+//add_action( 'cmb2_init', 'rawhide_register_demo_metabox' );
 /**
  * Hook in and add a demo metabox. Can only happen on the 'cmb2_init' hook.
  */
+function rawhide_register_metaboxes() {
+	$prefix = '_rawhide_metabox_';
+	
+	$cmb_metabox = new_cmb2_box( array(
+		'id'            => $prefix . 'metabox',
+		'title'         => __( 'Additional Stuff', 'cmb2' ),
+		'object_types'  => array( 'module', ), 
+	) );
+
+	$cmb_metabox->add_field( array(
+		'name'       => __( 'Section Order', 'cmb2' ),
+		'desc'       => __( '*REQUIRED. Enter a number. 1 is the first section at the top of the page.', 'cmb2' ),
+		'id'         => $prefix . 'section_order',
+		'type'       => 'text',
+	) );
+
+	$cmb_metabox->add_field( array(
+		'name'       => __( 'CSS Class', 'cmb2' ),
+		'desc'       => __( 'The CSS class that will be added to the container for this module', 'cmb2' ),
+		'id'         => $prefix . 'css_class',
+		'type'       => 'text',
+	) );
+
+	$cmb_metabox->add_field( array(
+		'name' => __( 'Background Image', 'cmb2' ),
+		'desc' => __( 'Upload an image or enter a URL.', 'cmb2' ),
+		'id'   => $prefix . 'bg_image',
+		'type' => 'file',
+	) );
+}
 function rawhide_register_demo_metabox() {
 
 	// Start with an underscore to hide fields from custom fields list
