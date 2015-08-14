@@ -29,6 +29,7 @@
 						// print_r($sectionMeta); 
 						?>
 						<section class="<?php echo $sectionMeta['_rawhide_metabox_css_class'][0]; ?>" style="background-image:url(<?php echo  $sectionMeta['_rawhide_metabox_bg_image'][0]; ?>);">
+							<div class="bg-shell" style="background-image:url(<?php echo  $sectionMeta['_rawhide_metabox_bg_image'][0]; ?>);"></div>
 							<h2><?php echo $section->post_title; ?></h2>
 							<?php echo $section->post_content; ?>
 						</section>

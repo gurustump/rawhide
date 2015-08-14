@@ -21,7 +21,7 @@ html.rawhide {
 
 body {
 	height:100%;
-	font-family: $lato;
+	font-family: $iron;
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
@@ -162,8 +162,6 @@ HEADER STYLES
 }
 
 	#logo {
-		margin: 0.75em 0;
-
 		a {
 			color: $white;
 		}
@@ -257,7 +255,6 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 1.5em;
 }
 
 		.hentry {
@@ -936,6 +933,49 @@ html body {
 	&.hide-admin-bar {
 		div#wpadminbar {
 			display:none;
+		}
+	}
+}
+
+body.home {
+	#main {
+		& section {
+			padding-top:80px;
+			position:relative;
+			background-size:cover;
+			&.dark {
+				background-color:$black;
+			}
+			&.light {
+				background-color:$white;
+			}
+			.bg-shell {
+				background-size:200px;
+				background-position:0;
+				background-repeat:no-repeat;
+				height:200px;
+			}
+		}
+	}
+	h1, #logo {
+		font-family:$post;
+	}
+	#logo {
+		position:fixed;
+		top:0;
+		left:0;
+		z-index:1;
+		width:100%;
+		text-align:center;
+		font-size:80px;
+		line-height:80px;
+		margin:0;
+		.sub {
+			font-family:$iron;
+			color:$orange;
+			font-size:20px;
+			line-height:20px;
+			display:block;
 		}
 	}
 }
