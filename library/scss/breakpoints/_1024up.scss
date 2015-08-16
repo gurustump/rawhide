@@ -1,0 +1,87 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+.wrap {
+	
+}
+
+body.home {
+	#main {
+		& > section {
+			height:100%;
+			.bg-shell {
+				background-size:cover;
+				height:100%;
+				width:100%;
+				position:absolute;
+				z-index:0;
+				left:0;
+				top:0;
+			}
+			.section-content {
+				position:absolute;
+			}
+			&.studio {
+				.bg-shell {
+					background-position:20% 100%;
+					background-size:130%;
+				}
+				.section-content {
+					right:5%;
+					top:22%;
+				}
+			}
+			&.location {
+				.bg-shell {
+					background-position:69% 0;
+					background-size:cover;
+				}
+				.section-content {
+					left:1%;
+					top:21%;
+				}
+			}
+			&.rentals {
+				.bg-shell {
+					display:block;
+					background-position:50% 100%;
+				}
+				.subsection {
+					background:none !important;
+					padding:0;
+					position:absolute;
+					&.phaseone {
+						top:28%;
+						right:17%;
+					}
+					&.canon {
+						bottom:10%;
+						left:22%;
+						
+					}
+				}
+				.info {
+					margin-left:16px;
+				}
+				h3 {
+					font-size:30px;
+					.price {
+						font-size:15px;
+					}
+				}
+			}
+			&  > * {
+				position:relative;
+				z-index:1;
+			}
+		}
+	}
+}

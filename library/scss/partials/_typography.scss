@@ -30,11 +30,11 @@ FONT FACE (IN YOUR FACE)
 
 @font-face {
 	font-family: 'postoffice';
-	src: url('library/fonts/postoffice-webfont.eot');
-	src: url('library/fonts/postoffice-webfont.eot?#iefix') format('embedded-opentype'),
-		url('library/fonts/postoffice-webfont.woff') format('woff'),
-		url('library/fonts/postoffice-webfont.ttf') format('truetype'),
-		url('library/fonts/postoffice-webfont.svg#font-name') format('svg');
+	src: url('../fonts/postoffice-webfont.eot');
+	src: url('../fonts/postoffice-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/postoffice-webfont.woff') format('woff'),
+		url('../fonts/postoffice-webfont.ttf') format('truetype'),
+		url('../fonts/postoffice-webfont.svg#font-name') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -42,12 +42,12 @@ FONT FACE (IN YOUR FACE)
 
 @font-face {
 	font-family: 'ironbrine';
-	src: url('library/fonts/iron__brine-webfont.eot');
-	src: url('library/fonts/iron__brine-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('library/fonts/iron__brine-webfont.woff2') format('woff2'),
-		 url('library/fonts/iron__brine-webfont.woff') format('woff'),
-		 url('library/fonts/iron__brine-webfont.ttf') format('truetype'),
-		 url('library/fonts/iron__brine-webfont.svg#iron__brineregular') format('svg');
+	src: url('../fonts/Iron-Brine.eot');
+	src: url('../fonts/Iron-Brine.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Iron-Brine.woff2') format('woff2'),
+		 url('../fonts/Iron-Brine.woff') format('woff'),
+		 url('../fonts/Iron-Brine.ttf') format('truetype'),
+		 url('../fonts/Iron-Brine.svg#iron__brineregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

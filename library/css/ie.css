@@ -67,15 +67,15 @@ FONT FACE (IN YOUR FACE)
 */
 @font-face {
   font-family: 'postoffice';
-  src: url("library/fonts/postoffice-webfont.eot");
-  src: url("library/fonts/postoffice-webfont.eot?#iefix") format("embedded-opentype"), url("library/fonts/postoffice-webfont.woff") format("woff"), url("library/fonts/postoffice-webfont.ttf") format("truetype"), url("library/fonts/postoffice-webfont.svg#font-name") format("svg");
+  src: url("../fonts/postoffice-webfont.eot");
+  src: url("../fonts/postoffice-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/postoffice-webfont.woff") format("woff"), url("../fonts/postoffice-webfont.ttf") format("truetype"), url("../fonts/postoffice-webfont.svg#font-name") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'ironbrine';
-  src: url("library/fonts/iron__brine-webfont.eot");
-  src: url("library/fonts/iron__brine-webfont.eot?#iefix") format("embedded-opentype"), url("library/fonts/iron__brine-webfont.woff2") format("woff2"), url("library/fonts/iron__brine-webfont.woff") format("woff"), url("library/fonts/iron__brine-webfont.ttf") format("truetype"), url("library/fonts/iron__brine-webfont.svg#iron__brineregular") format("svg");
+  src: url("../fonts/Iron-Brine.eot");
+  src: url("../fonts/Iron-Brine.eot?#iefix") format("embedded-opentype"), url("../fonts/Iron-Brine.woff2") format("woff2"), url("../fonts/Iron-Brine.woff") format("woff"), url("../fonts/Iron-Brine.ttf") format("truetype"), url("../fonts/Iron-Brine.svg#iron__brineregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -92,7 +92,6 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-/* line 79, ../scss/partials/_typography.scss */
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;
@@ -192,23 +191,19 @@ them in here, they won't work.
 NAVIGATION STYLES
 *********************/
 /* .menu is clearfixed inside mixins.scss */
-/* line 33, ../scss/breakpoints/_481up.scss */
 .menu {
   /* end .menu ul */
 }
-/* line 34, ../scss/breakpoints/_481up.scss */
 .menu ul {
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 35, ../scss/breakpoints/_481up.scss */
 .menu ul li {
   /*
   plan your menus and drop-downs wisely.
   */
 }
-/* line 36, ../scss/breakpoints/_481up.scss */
 .menu ul li a {
   /*
   you can use hover styles here even though this size
@@ -221,23 +216,19 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 /* entry content */
-/* line 81, ../scss/breakpoints/_481up.scss */
 .entry-content {
   /* at this larger size, we can start to align images */
 }
-/* line 85, ../scss/breakpoints/_481up.scss */
 .entry-content .alignleft, .entry-content img.alignleft {
   margin-right: 1.5em;
   display: inline;
   float: left;
 }
-/* line 90, ../scss/breakpoints/_481up.scss */
 .entry-content .alignright, .entry-content img.alignright {
   margin-left: 1.5em;
   display: inline;
   float: right;
 }
-/* line 95, ../scss/breakpoints/_481up.scss */
 .entry-content .aligncenter, .entry-content img.aligncenter {
   margin-right: auto;
   margin-left: auto;
@@ -273,7 +264,6 @@ GENERAL STYLES
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-/* line 26, ../scss/breakpoints/_768up.scss */
 .wrap {
   width: 760px;
 }
@@ -284,19 +274,16 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 42, ../scss/breakpoints/_768up.scss */
 .nav {
   border: 0;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 44, ../scss/breakpoints/_768up.scss */
 .nav ul {
   background: black;
   margin-top: 0;
 }
-/* line 48, ../scss/breakpoints/_768up.scss */
 .nav li {
   float: left;
   position: relative;
@@ -305,7 +292,6 @@ NAVIGATION STYLES
   */
   /* showing sub-menus */
 }
-/* line 52, ../scss/breakpoints/_768up.scss */
 .nav li a {
   border-bottom: 0;
   /*
@@ -313,12 +299,10 @@ NAVIGATION STYLES
   has the possibility of being a mobile device.
   */
 }
-/* line 59, ../scss/breakpoints/_768up.scss */
 .nav li a:hover, .nav li a:focus {
   color: white;
   text-decoration: underline;
 }
-/* line 71, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   margin-top: 0;
@@ -329,7 +313,6 @@ NAVIGATION STYLES
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 80, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   /*
@@ -338,7 +321,6 @@ NAVIGATION STYLES
   for usability. k, bai.
   */
 }
-/* line 82, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 10px;
@@ -347,18 +329,15 @@ NAVIGATION STYLES
   width: 180px;
   border-bottom: 1px solid #ccc;
 }
-/* line 99, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 109, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li ul,
 .nav li ul.children li ul {
   top: 0;
   left: 100%;
 }
-/* line 124, ../scss/breakpoints/_768up.scss */
 .nav li:hover > ul {
   top: auto;
   visibility: visible;
@@ -368,28 +347,23 @@ NAVIGATION STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 144, ../scss/breakpoints/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 148, ../scss/breakpoints/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 153, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 158, ../scss/breakpoints/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 166, ../scss/breakpoints/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -414,7 +388,6 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 274, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
@@ -424,6 +397,42 @@ mobile. Make sure to double check these!
 }
 
 /* end .footer-links */
+body.home #main > section {
+  height: 100%;
+}
+body.home #main > section .bg-shell {
+  height: 620px;
+}
+body.home #main > section.studio .bg-shell {
+  background-position: 0 100%;
+  background-size: 152%;
+}
+body.home #main > section.location .bg-shell {
+  background-position: 100% 0;
+  background-size: 136%;
+}
+body.home #main > section.rentals {
+  background: black;
+}
+body.home #main > section.rentals .section-content {
+  padding-top: 68px;
+}
+body.home #main > section.rentals .subsection {
+  padding: 340px 35px 0;
+}
+body.home #main > section.rentals .subsection.phaseone {
+  background-size: 55%;
+}
+body.home #main > section.rentals .subsection.canon {
+  background-size: 82%;
+}
+body.home #logo, body.home #main > section.hide-sitename h2 {
+  padding-top: 11px;
+}
+body.home #logo .primary > span, body.home #main > section.hide-sitename h2 .primary > span {
+  display: inline;
+}
+
 /******************************************************************
 Site Name:
 Author:
@@ -434,9 +443,78 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-/* line 12, ../scss/breakpoints/_1030up.scss */
-.wrap {
-  width: 1040px;
+body.home #logo, body.home #main > section.hide-sitename h2 {
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 3px;
+  padding-top: 40px;
+}
+body.home #logo .sub, body.home #main > section.hide-sitename h2 .sub {
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 7px;
+}
+body.home #main > section {
+  font-size: 15px;
+}
+body.home #main > section h2 {
+  font-size: 36px;
+  padding-bottom: 30px;
+  margin-bottom: 18px;
+}
+body.home #main > section h3 {
+  font-size: 20px;
+}
+body.home #main > section .price, body.home #main > section .info {
+  font-size: 15px;
+}
+body.home #main > section .info {
+  margin-left: 40px;
+}
+body.home #main > section .info li {
+  margin-bottom: 15px;
+}
+body.home #main > section .asterisk {
+  line-height: 1.2em;
+  float: right;
+  margin-top: 15px;
+}
+body.home #main > section.studio .bg-shell {
+  background-position: 50% 50%;
+  background-size: cover;
+}
+body.home #main > section.studio h2 {
+  background-size: 233px;
+}
+body.home #main > section.studio .section-content {
+  right: 9%;
+  top: 22%;
+}
+body.home #main > section.location .bg-shell {
+  background-position: 50% 50%;
+  background-size: cover;
+}
+body.home #main > section.location h2 {
+  background-size: 264px;
+}
+body.home #main > section.location .section-content {
+  left: 5%;
+  top: 22%;
+}
+body.home #main > section.rentals .subsection.phaseone {
+  top: 27%;
+  right: 15%;
+}
+body.home #main > section.rentals .subsection.canon {
+  bottom: 6%;
+  left: 20%;
+}
+body.home #main > section.rentals h3 {
+  font-size: 36px;
+}
+body.home #main > section > * {
+  position: relative;
+  z-index: 1;
 }
 
 /*

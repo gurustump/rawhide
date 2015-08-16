@@ -11,28 +11,31 @@ on larger screens.
 
 
 body.home {
+	#logo, #main > section.hide-sitename h2 {
+		font-size:80px;
+		line-height:80px;
+		padding-top:52px;
+		.sub {
+			font-size:20px;
+			line-height:20px;
+			letter-spacing:10px;
+		}
+	}
 	#main {
 		& > section {
-			&.studio {
-				.section-content {
-					right:12%;
-				}
-			}
 			&.rentals {
 				.subsection {
 					&.phaseone {
-						top:27%;
-						right:20%;
+						right:23%;
 					}
 					&.canon {
-						bottom:6%;
-						left:25%;
+						left:27%;
 					}
 				}
 				h3 {
-					font-size:36px;
+					font-size:48px;
 					.price {
-						font-size:22px;
+						font-size:24px;
 					}
 				}
 			}

@@ -1,0 +1,79 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+
+
+body.home {
+	#logo, #main > section.hide-sitename h2 {
+		font-size:80px;
+		line-height:80px;
+		padding-top:52px;
+		.sub {
+			font-size:20px;
+			line-height:20px;
+			letter-spacing:10px;
+		}
+	}
+	#main {
+		& > section {
+			font-size:19px;
+			h2 {
+				font-size:48px;
+				background-size:auto !important;
+				padding-bottom:40px;
+				margin-bottom:28px;
+			}
+			h3 {
+				font-size:24px;
+			}
+			.price, .info {
+				font-size:19px;
+			}
+			.info {
+				margin-left:50px;
+				li {
+					margin-bottom:20px;
+				}
+			}
+			&.studio {
+				.bg-shell {
+					background-position:50% 65%;
+				}
+				.section-content {
+					right:16%;
+				}
+			}
+			&.location {
+				.section-content {
+					left:7%;
+				}
+			}
+			&.rentals {
+				.bg-shell {
+					background-size:contain;
+				}
+				.subsection {
+					&.phaseone {
+						right:18%;
+					}
+					&.canon {
+						left:22%;
+					}
+				}
+				h3 {
+					font-size:40px;
+					.price {
+						font-size:24px;
+					}
+				}
+			}
+		}
+	}
+}

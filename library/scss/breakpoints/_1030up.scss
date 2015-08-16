@@ -10,5 +10,91 @@ be seen on the Desktop.
 ******************************************************************/
 
 .wrap {
-  width: 1040px;
+	
+}
+
+body.home {
+	#logo, #main > section.hide-sitename h2 {
+		font-size:60px;
+		line-height:60px;
+		letter-spacing:3px;
+		padding-top:40px;
+		.sub {
+			font-size:14px;
+			line-height:14px;
+			letter-spacing:7px;
+		}
+	}
+	#main {
+		& > section {
+			font-size:15px;
+			h2 {
+				font-size:36px;
+				padding-bottom:30px;
+				margin-bottom:18px;
+			}
+			h3 {
+				font-size:20px;
+			}
+			.price, .info {
+				font-size:15px;
+			}
+			.info {
+				margin-left:40px;
+				li {
+					margin-bottom:15px;
+				}
+			}
+			.asterisk {
+				line-height:1.2em;
+				float:right;
+				margin-top:15px;
+			}
+			&.studio {
+				.bg-shell {
+					background-position:50% 50%;
+					background-size:cover;
+				}
+				h2 {
+					background-size:233px;
+				}
+				.section-content {
+					right:9%;
+					top:22%;
+				}
+			}
+			&.location {
+				.bg-shell {
+					background-position:50% 50%;
+					background-size:cover;
+				}
+				h2 {
+					background-size:264px;
+				}
+				.section-content {
+					left:5%;
+					top:22%;
+				}
+			}
+			&.rentals {
+				.subsection {
+					&.phaseone {
+						top:27%;
+						right:15%;
+					}
+					&.canon {
+						bottom:6%;
+						left:20%;
+					}
+				}
+				h3 {
+					font-size:36px;
+				}
+			}
+			&  > * {
+				position:relative;
+				z-index:1;
+			}
+		}
+	}
 }

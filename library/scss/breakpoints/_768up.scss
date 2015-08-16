@@ -285,3 +285,48 @@ mobile. Make sure to double check these!
 	}
 } /* end .footer-links */
 
+body.home {
+	#main {
+		& > section {
+			height:100%;
+			.bg-shell {
+				height:620px;
+			}
+			&.studio {
+				.bg-shell { 
+					background-position:0 100%;
+					background-size:152%;
+				}
+			}
+			&.location {
+				.bg-shell {
+					background-position:100% 0;
+					background-size:136%;
+				}
+			}
+			&.rentals {
+				background:$black;
+				.section-content {
+					padding-top:68px;
+				}
+				.subsection {
+					padding:340px 35px 0;
+					&.phaseone {
+						background-size:55%;
+					}
+					&.canon {
+						background-size:82%;
+					}
+				}
+			}
+		}
+	}
+	#logo, #main > section.hide-sitename h2 {
+		padding-top:11px;
+		.primary {
+			& > span {
+				display:inline;
+			}
+		}
+	}
+}

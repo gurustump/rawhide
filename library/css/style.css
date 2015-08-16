@@ -27,7 +27,6 @@ the whole project.
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 12, ../scss/partials/_normalize.scss */
 article,
 aside,
 details,
@@ -46,7 +45,6 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 31, ../scss/partials/_normalize.scss */
 audio,
 canvas,
 video {
@@ -57,7 +55,6 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 42, ../scss/partials/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -67,7 +64,6 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9.
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
-/* line 52, ../scss/partials/_normalize.scss */
 [hidden],
 template {
   display: none;
@@ -81,7 +77,6 @@ template {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 67, ../scss/partials/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -94,7 +89,6 @@ html {
 /**
  * Remove default margin.
  */
-/* line 77, ../scss/partials/_normalize.scss */
 body {
   margin: 0;
 }
@@ -105,7 +99,6 @@ body {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 89, ../scss/partials/_normalize.scss */
 a {
   background: transparent;
 }
@@ -113,7 +106,6 @@ a {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 97, ../scss/partials/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -121,7 +113,6 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 105, ../scss/partials/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -134,7 +125,6 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 119, ../scss/partials/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -143,7 +133,6 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 128, ../scss/partials/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -151,7 +140,6 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 136, ../scss/partials/_normalize.scss */
 b,
 strong,
 .strong {
@@ -161,7 +149,6 @@ strong,
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 146, ../scss/partials/_normalize.scss */
 dfn,
 em,
 .em {
@@ -171,7 +158,6 @@ em,
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 156, ../scss/partials/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -181,7 +167,6 @@ hr {
 /*
  * proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens)
 */
-/* line 166, ../scss/partials/_normalize.scss */
 p {
   -webkit-hyphens: auto;
   -epub-hyphens: auto;
@@ -192,7 +177,6 @@ p {
 /*
  * Addresses margins set differently in IE6/7.
  */
-/* line 177, ../scss/partials/_normalize.scss */
 pre {
   margin: 0;
 }
@@ -200,7 +184,6 @@ pre {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 185, ../scss/partials/_normalize.scss */
 code,
 kbd,
 pre,
@@ -212,7 +195,6 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 197, ../scss/partials/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
@@ -220,7 +202,6 @@ pre {
 /**
  * Set consistent quote types.
  */
-/* line 205, ../scss/partials/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -228,14 +209,12 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 212, ../scss/partials/_normalize.scss */
 q:before,
 q:after {
   content: '';
   content: none;
 }
 
-/* line 218, ../scss/partials/_normalize.scss */
 small, .small {
   font-size: 75%;
 }
@@ -243,7 +222,6 @@ small, .small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 226, ../scss/partials/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -252,12 +230,10 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 234, ../scss/partials/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 238, ../scss/partials/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -268,7 +244,6 @@ sub {
 /*
  * Addresses margins set differently in IE6/7.
  */
-/* line 250, ../scss/partials/_normalize.scss */
 dl,
 menu,
 ol,
@@ -276,7 +251,6 @@ ul {
   margin: 1em 0;
 }
 
-/* line 257, ../scss/partials/_normalize.scss */
 dd {
   margin: 0;
 }
@@ -284,12 +258,10 @@ dd {
 /*
  * Addresses paddings set differently in IE6/7.
  */
-/* line 265, ../scss/partials/_normalize.scss */
 menu {
   padding: 0 0 0 40px;
 }
 
-/* line 269, ../scss/partials/_normalize.scss */
 ol,
 ul {
   padding: 0;
@@ -299,7 +271,6 @@ ul {
 /*
  * Corrects list images handled incorrectly in IE7.
  */
-/* line 279, ../scss/partials/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -312,7 +283,6 @@ nav ol {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 293, ../scss/partials/_normalize.scss */
 img {
   border: 0;
 }
@@ -320,7 +290,6 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 301, ../scss/partials/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -331,7 +300,6 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 313, ../scss/partials/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -342,7 +310,6 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 325, ../scss/partials/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -353,7 +320,6 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 336, ../scss/partials/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -366,7 +332,6 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 347, ../scss/partials/_normalize.scss */
 button,
 input,
 select,
@@ -383,7 +348,6 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 361, ../scss/partials/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -395,7 +359,6 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 373, ../scss/partials/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -408,7 +371,6 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 386, ../scss/partials/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -422,7 +384,6 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 398, ../scss/partials/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -432,7 +393,6 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 408, ../scss/partials/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -446,7 +406,6 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 420, ../scss/partials/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -460,7 +419,6 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 432, ../scss/partials/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -469,7 +427,6 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 441, ../scss/partials/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -480,7 +437,6 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 452, ../scss/partials/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -494,20 +450,17 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 465, ../scss/partials/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 472, ../scss/partials/_normalize.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 479, ../scss/partials/_normalize.scss */
 .image-replacement,
 .ir {
   text-indent: 100%;
@@ -515,16 +468,13 @@ table {
   overflow: hidden;
 }
 
-/* line 487, ../scss/partials/_normalize.scss */
 .clearfix, .cf, .comment-respond {
   zoom: 1;
 }
-/* line 489, ../scss/partials/_normalize.scss */
 .clearfix:before, .clearfix:after, .cf:before, .comment-respond:before, .cf:after, .comment-respond:after {
   content: "";
   display: table;
 }
-/* line 490, ../scss/partials/_normalize.scss */
 .clearfix:after, .cf:after, .comment-respond:after {
   clear: both;
 }
@@ -533,7 +483,6 @@ table {
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-/* line 497, ../scss/partials/_normalize.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
@@ -589,15 +538,15 @@ FONT FACE (IN YOUR FACE)
 */
 @font-face {
   font-family: 'postoffice';
-  src: url("library/fonts/postoffice-webfont.eot");
-  src: url("library/fonts/postoffice-webfont.eot?#iefix") format("embedded-opentype"), url("library/fonts/postoffice-webfont.woff") format("woff"), url("library/fonts/postoffice-webfont.ttf") format("truetype"), url("library/fonts/postoffice-webfont.svg#font-name") format("svg");
+  src: url("../fonts/postoffice-webfont.eot");
+  src: url("../fonts/postoffice-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/postoffice-webfont.woff") format("woff"), url("../fonts/postoffice-webfont.ttf") format("truetype"), url("../fonts/postoffice-webfont.svg#font-name") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'ironbrine';
-  src: url("library/fonts/iron__brine-webfont.eot");
-  src: url("library/fonts/iron__brine-webfont.eot?#iefix") format("embedded-opentype"), url("library/fonts/iron__brine-webfont.woff2") format("woff2"), url("library/fonts/iron__brine-webfont.woff") format("woff"), url("library/fonts/iron__brine-webfont.ttf") format("truetype"), url("library/fonts/iron__brine-webfont.svg#iron__brineregular") format("svg");
+  src: url("../fonts/Iron-Brine.eot");
+  src: url("../fonts/Iron-Brine.eot?#iefix") format("embedded-opentype"), url("../fonts/Iron-Brine.woff2") format("woff2"), url("../fonts/Iron-Brine.woff") format("woff"), url("../fonts/Iron-Brine.ttf") format("truetype"), url("../fonts/Iron-Brine.svg#iron__brineregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -614,7 +563,6 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-/* line 79, ../scss/partials/_typography.scss */
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;
@@ -744,7 +692,6 @@ own grids. It's better in the long run and allows you full control
 over your project's layout.
 
 ******************************************************************/
-/* line 35, ../scss/partials/_grid.scss */
 .last-col {
   float: right;
   padding-right: 0 !important;
@@ -757,7 +704,6 @@ There are four types, but you can add or customize
 them however you see fit.
 */
 @media (max-width: 767px) {
-  /* line 49, ../scss/partials/_grid.scss */
   .m-all {
     float: left;
     padding-right: 0.75em;
@@ -765,35 +711,30 @@ them however you see fit.
     padding-right: 0;
   }
 
-  /* line 55, ../scss/partials/_grid.scss */
   .m-1of2 {
     float: left;
     padding-right: 0.75em;
     width: 50%;
   }
 
-  /* line 60, ../scss/partials/_grid.scss */
   .m-1of3 {
     float: left;
     padding-right: 0.75em;
     width: 33.33%;
   }
 
-  /* line 65, ../scss/partials/_grid.scss */
   .m-2of3 {
     float: left;
     padding-right: 0.75em;
     width: 66.66%;
   }
 
-  /* line 70, ../scss/partials/_grid.scss */
   .m-1of4 {
     float: left;
     padding-right: 0.75em;
     width: 25%;
   }
 
-  /* line 75, ../scss/partials/_grid.scss */
   .m-3of4 {
     float: left;
     padding-right: 0.75em;
@@ -802,7 +743,6 @@ them however you see fit.
 }
 /* Portrait tablet to landscape */
 @media (min-width: 768px) and (max-width: 1029px) {
-  /* line 86, ../scss/partials/_grid.scss */
   .t-all {
     float: left;
     padding-right: 0.75em;
@@ -810,63 +750,54 @@ them however you see fit.
     padding-right: 0;
   }
 
-  /* line 92, ../scss/partials/_grid.scss */
   .t-1of2 {
     float: left;
     padding-right: 0.75em;
     width: 50%;
   }
 
-  /* line 97, ../scss/partials/_grid.scss */
   .t-1of3 {
     float: left;
     padding-right: 0.75em;
     width: 33.33%;
   }
 
-  /* line 102, ../scss/partials/_grid.scss */
   .t-2of3 {
     float: left;
     padding-right: 0.75em;
     width: 66.66%;
   }
 
-  /* line 107, ../scss/partials/_grid.scss */
   .t-1of4 {
     float: left;
     padding-right: 0.75em;
     width: 25%;
   }
 
-  /* line 112, ../scss/partials/_grid.scss */
   .t-3of4 {
     float: left;
     padding-right: 0.75em;
     width: 75%;
   }
 
-  /* line 117, ../scss/partials/_grid.scss */
   .t-1of5 {
     float: left;
     padding-right: 0.75em;
     width: 20%;
   }
 
-  /* line 122, ../scss/partials/_grid.scss */
   .t-2of5 {
     float: left;
     padding-right: 0.75em;
     width: 40%;
   }
 
-  /* line 127, ../scss/partials/_grid.scss */
   .t-3of5 {
     float: left;
     padding-right: 0.75em;
     width: 60%;
   }
 
-  /* line 132, ../scss/partials/_grid.scss */
   .t-4of5 {
     float: left;
     padding-right: 0.75em;
@@ -875,7 +806,6 @@ them however you see fit.
 }
 /* Landscape to small desktop */
 @media (min-width: 1030px) {
-  /* line 142, ../scss/partials/_grid.scss */
   .d-all {
     float: left;
     padding-right: 0.75em;
@@ -883,147 +813,126 @@ them however you see fit.
     padding-right: 0;
   }
 
-  /* line 148, ../scss/partials/_grid.scss */
   .d-1of2 {
     float: left;
     padding-right: 0.75em;
     width: 50%;
   }
 
-  /* line 153, ../scss/partials/_grid.scss */
   .d-1of3 {
     float: left;
     padding-right: 0.75em;
     width: 33.33%;
   }
 
-  /* line 158, ../scss/partials/_grid.scss */
   .d-2of3 {
     float: left;
     padding-right: 0.75em;
     width: 66.66%;
   }
 
-  /* line 163, ../scss/partials/_grid.scss */
   .d-1of4 {
     float: left;
     padding-right: 0.75em;
     width: 25%;
   }
 
-  /* line 168, ../scss/partials/_grid.scss */
   .d-3of4 {
     float: left;
     padding-right: 0.75em;
     width: 75%;
   }
 
-  /* line 173, ../scss/partials/_grid.scss */
   .d-1of5 {
     float: left;
     padding-right: 0.75em;
     width: 20%;
   }
 
-  /* line 178, ../scss/partials/_grid.scss */
   .d-2of5 {
     float: left;
     padding-right: 0.75em;
     width: 40%;
   }
 
-  /* line 183, ../scss/partials/_grid.scss */
   .d-3of5 {
     float: left;
     padding-right: 0.75em;
     width: 60%;
   }
 
-  /* line 188, ../scss/partials/_grid.scss */
   .d-4of5 {
     float: left;
     padding-right: 0.75em;
     width: 80%;
   }
 
-  /* line 193, ../scss/partials/_grid.scss */
   .d-1of6 {
     float: left;
     padding-right: 0.75em;
     width: 16.6666666667%;
   }
 
-  /* line 198, ../scss/partials/_grid.scss */
   .d-1of7 {
     float: left;
     padding-right: 0.75em;
     width: 14.2857142857%;
   }
 
-  /* line 203, ../scss/partials/_grid.scss */
   .d-2of7 {
     float: left;
     padding-right: 0.75em;
     width: 28.5714286%;
   }
 
-  /* line 208, ../scss/partials/_grid.scss */
   .d-3of7 {
     float: left;
     padding-right: 0.75em;
     width: 42.8571429%;
   }
 
-  /* line 213, ../scss/partials/_grid.scss */
   .d-4of7 {
     float: left;
     padding-right: 0.75em;
     width: 57.1428572%;
   }
 
-  /* line 218, ../scss/partials/_grid.scss */
   .d-5of7 {
     float: left;
     padding-right: 0.75em;
     width: 71.4285715%;
   }
 
-  /* line 223, ../scss/partials/_grid.scss */
   .d-6of7 {
     float: left;
     padding-right: 0.75em;
     width: 85.7142857%;
   }
 
-  /* line 228, ../scss/partials/_grid.scss */
   .d-1of8 {
     float: left;
     padding-right: 0.75em;
     width: 12.5%;
   }
 
-  /* line 233, ../scss/partials/_grid.scss */
   .d-1of9 {
     float: left;
     padding-right: 0.75em;
     width: 11.1111111111%;
   }
 
-  /* line 238, ../scss/partials/_grid.scss */
   .d-1of10 {
     float: left;
     padding-right: 0.75em;
     width: 10%;
   }
 
-  /* line 243, ../scss/partials/_grid.scss */
   .d-1of11 {
     float: left;
     padding-right: 0.75em;
     width: 9.09090909091%;
   }
 
-  /* line 248, ../scss/partials/_grid.scss */
   .d-1of12 {
     float: left;
     padding-right: 0.75em;
@@ -1047,32 +956,27 @@ If you want to use these alerts in your design, you can. If not,
 you can just remove this stylesheet.
 
 ******************************************************************/
-/* line 15, ../scss/modules/_alerts.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
 }
 
-/* line 21, ../scss/modules/_alerts.scss */
 .alert-help {
   border-color: #e8dc59;
   background: #ebe16f;
 }
 
-/* line 27, ../scss/modules/_alerts.scss */
 .alert-info {
   border-color: #bfe4f4;
   background: #d5edf8;
 }
 
-/* line 33, ../scss/modules/_alerts.scss */
 .alert-error {
   border-color: #f8cdce;
   background: #fbe3e4;
 }
 
-/* line 39, ../scss/modules/_alerts.scss */
 .alert-success {
   border-color: #deeaae;
   background: #e6efc2;
@@ -1102,7 +1006,6 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-/* line 27, ../scss/modules/_buttons.scss */
 .blue-btn, .comment-reply-link, #submit {
   display: inline-block;
   position: relative;
@@ -1123,13 +1026,11 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   -o-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out;
 }
-/* line 44, ../scss/modules/_buttons.scss */
 .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
   color: white;
   text-decoration: none;
   outline: none;
 }
-/* line 51, ../scss/modules/_buttons.scss */
 .blue-btn:active, .comment-reply-link:active, #submit:active {
   top: 1px;
 }
@@ -1139,15 +1040,12 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-/* line 62, ../scss/modules/_buttons.scss */
 .blue-btn, .comment-reply-link, #submit {
   background-color: #2980b9;
 }
-/* line 66, ../scss/modules/_buttons.scss */
 .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
   background-color: #2574a8;
 }
-/* line 71, ../scss/modules/_buttons.scss */
 .blue-btn:active, .comment-reply-link:active, #submit:active {
   background-color: #2472a4;
 }
@@ -1172,7 +1070,6 @@ http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/
 /*********************
 INPUTS
 *********************/
-/* line 24, ../scss/modules/_forms.scss */
 input[type="text"],
 input[type="password"],
 input[type="datetime"],
@@ -1211,7 +1108,6 @@ textarea,
   -o-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
 }
-/* line 59, ../scss/modules/_forms.scss */
 input[type="text"]:focus, input[type="text"]:active,
 input[type="password"]:focus,
 input[type="password"]:active,
@@ -1248,7 +1144,6 @@ textarea:active,
   background-color: #f7f8fa;
   outline: none;
 }
-/* line 66, ../scss/modules/_forms.scss */
 input[type="text"].error, input[type="text"].is-invalid,
 input[type="password"].error,
 input[type="password"].is-invalid,
@@ -1290,7 +1185,6 @@ textarea.is-invalid,
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDREQkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDREQ0YwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3ODRGRkE2RjA0QTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERBRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U8iT5wAAAedJREFUeNqk1U9I02Ecx/HtV3aIFAc1hcRDUoGXRAq0oNLA2CrsEFmHbikZu0iQYIFGYAiegkCpLipBxPpDEBMUzB0EhSG2LhG7hMR2GviPgUTvB57Bw8P3+U23B16HPX8+e/b8nt93wezZSMCnhXETF3AcB5BDCnH8Dq98ExcGHcFn8Ah3cdDni+fxnPDv9oAnTB7CKu6VCFXtChZy56LxUjt+jfuB8toSOth9wd7xWAWhqrUjYR/FRTwWJm+iIPT/w7bQf5ljiZnBg45dtKFX6H+LU8gIY8OEV6vgTkStwXWE8BPTGDHGPqNPz2mCfSOOYkA99TvCt1bhGPL68zMcwmncMuape10jrI+q4BbHi/FLn31S9z2x5tRhTc+1W506ipM+T3oRD4X+8+qtc4SqFvL0z/Fr14S+Szjis8bz9Lvvaq8cwS/wwGfdlqfPSWqTiFlX77o13u9Ym1PBs8JAytpRoy44X9Ft9E/gvbA+rYKn8NcaaMVc8UHgBw4b9/iqUQZ6hOAJFbyDcUflmsEX4a6+wTtHGfhAIUqa1U29Zc2BytouThD8x6xuN5CtMPi2CrXLZkZf/HyZoRFCP7n+QVR4PV7uI/AjGghN7OU/r1ilnqILtfpNC+o6vIFljBKYlhb/F2AAgaBsWR5wRiIAAAAASUVORK5CYII=);
   outline-color: #fbe3e4;
 }
-/* line 78, ../scss/modules/_forms.scss */
 input[type="text"].success, input[type="text"].is-valid,
 input[type="password"].success,
 input[type="password"].is-valid,
@@ -1332,7 +1226,6 @@ textarea.is-valid,
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDRERkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDRFMEYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MzQ0NERERjA0QjExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERFRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7olkTQAAAfhJREFUeNqklU9oE0EUhzdroWjw0tBeWlDxkEaIp55TsCU9VKIgCrHBelA8CQ1Kr1WPbZrQ3gqtQqvGqxpQc2jBk6BIIaAGD4qNCKURpDSKiPi98gLDsJt//uBjsztvfnk7895sIPAw6/joGMThFJyAXn2+A+9gA57/TaY/eU0OeBgfhGm4DiGnsb7DAszxBz/NAdcKjMJLuNWCqagHbsscN5+L+hmH4QkMOe1L5jzFfNA2PgT34ajTuY7AGuZB0/hmh5m+gS0r8xv1zRvg+gGCHZiOwnF4DP3iB3sQkYxPd2C6CWfhB9Xwlus5+K1j4jXuaq3a+gM1H9OPcAa+7q9lPidZJqHbiIm7Wg22rsEI7FrPSzAMX/T+ADyAKSsu7Fr1KplehLvwCs5DvfBf65p+MypqRbO1FXK9utH4/QKuaqYTsG3E3INJv00Q46px3+XxanJ/Ute2/vqP4FKDza2KcdljIKdnhS0xXYULTaqmLMZFn8FFSFtvt6x70ExFCS5oUXspq2ssa7oEl1swFa+CGFdgtkHgPDyDKy02zyxNU6lXRUZb1EuHYayNNs+Yh5B0WQo+/8fpJnNTZFuzz2OpjoQ2QruSOQlMy35fEGmEGMxY9e1brxobw7TkWA1h6xfckUPb+JhGoE/Hpfvew7qUld/H9J8AAwDpw3WYrxcZ3QAAAABJRU5ErkJggg==);
   outline-color: #e6efc2;
 }
-/* line 90, ../scss/modules/_forms.scss */
 input[type="text"][disabled], input[type="text"].is-disabled,
 input[type="password"][disabled],
 input[type="password"].is-disabled,
@@ -1370,7 +1263,6 @@ textarea.is-disabled,
   border-color: #cfcfcf;
   opacity: 0.6;
 }
-/* line 96, ../scss/modules/_forms.scss */
 input[type="text"][disabled]:focus, input[type="text"][disabled]:active, input[type="text"].is-disabled:focus, input[type="text"].is-disabled:active,
 input[type="password"][disabled]:focus,
 input[type="password"][disabled]:active,
@@ -1439,19 +1331,16 @@ textarea.is-disabled:active,
   background-color: #d5edf8;
 }
 
-/* line 106, ../scss/modules/_forms.scss */
 input[type="password"] {
   letter-spacing: 0.3em;
 }
 
-/* line 111, ../scss/modules/_forms.scss */
 textarea {
   max-width: 100%;
   min-height: 120px;
   line-height: 1.5em;
 }
 
-/* line 118, ../scss/modules/_forms.scss */
 select {
   -webkit-appearance: none;
   /* 1 */
@@ -1483,13 +1372,11 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
-/* line 17, ../scss/breakpoints/_base.scss */
 html.rawhide {
   height: 100%;
   margin-top: 0 !important;
 }
 
-/* line 22, ../scss/breakpoints/_base.scss */
 body {
   height: 100%;
   font-family: "ironbrine", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1543,7 +1430,6 @@ style a page via class
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-/* line 78, ../scss/breakpoints/_base.scss */
 .wrap {
   width: 96%;
   margin: 0 auto;
@@ -1552,18 +1438,15 @@ LAYOUT & GRID STYLES
 /*********************
 LINK STYLES
 *********************/
-/* line 87, ../scss/breakpoints/_base.scss */
 a, a:visited {
   color: #f01d4f;
   /* on hover */
   /* on click */
   /* mobile tap color */
 }
-/* line 91, ../scss/breakpoints/_base.scss */
 a:hover, a:focus, a:visited:hover, a:visited:focus {
   color: #d10e3c;
 }
-/* line 101, ../scss/breakpoints/_base.scss */
 a:link, a:visited:link {
   /*
   this highlights links on iPhones/iPads.
@@ -1576,46 +1459,40 @@ a:link, a:visited:link {
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
-/* line 115, ../scss/breakpoints/_base.scss */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
-  font-weight: 500;
+  font-weight: 400;
+  margin-top: 0;
   /*
   if you're going to use webfonts, be sure to check your weights
   http://css-tricks.com/watch-your-font-weight/
   */
   /* removing text decoration from all headline links */
 }
-/* line 124, ../scss/breakpoints/_base.scss */
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
   text-decoration: none;
 }
 
-/* line 129, ../scss/breakpoints/_base.scss */
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.333em;
 }
 
-/* line 134, ../scss/breakpoints/_base.scss */
 h2, .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
   margin-bottom: 0.375em;
 }
 
-/* line 140, ../scss/breakpoints/_base.scss */
 h3, .h3 {
   font-size: 1.125em;
 }
 
-/* line 144, ../scss/breakpoints/_base.scss */
 h4, .h4 {
   font-size: 1.1em;
   font-weight: 700;
 }
 
-/* line 149, ../scss/breakpoints/_base.scss */
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
@@ -1626,12 +1503,10 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-/* line 160, ../scss/breakpoints/_base.scss */
 .header {
   background-color: black;
 }
 
-/* line 165, ../scss/breakpoints/_base.scss */
 #logo a {
   color: white;
 }
@@ -1646,7 +1521,6 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-/* line 182, ../scss/breakpoints/_base.scss */
 .nav {
   border-bottom: 0;
   margin: 0;
@@ -1654,7 +1528,6 @@ and more scalable.
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 186, ../scss/breakpoints/_base.scss */
 .nav li {
   /*
   so you really have to rethink your dropdowns for mobile.
@@ -1664,7 +1537,6 @@ and more scalable.
   http://www.alistapart.com/articles/organizing-mobile/
   */
 }
-/* line 188, ../scss/breakpoints/_base.scss */
 .nav li a {
   display: block;
   color: white;
@@ -1677,7 +1549,6 @@ and more scalable.
   keep this file as small as possible!
   */
 }
-/* line 221, ../scss/breakpoints/_base.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 30px;
@@ -1687,30 +1558,34 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 260, ../scss/breakpoints/_base.scss */
+ul.info {
+  margin-left: 30px;
+  list-style-type: disc;
+}
+ul.info > li {
+  line-height: 1.2em;
+  margin-bottom: 5px;
+}
+
 .hentry {
   background-color: white;
   border-radius: 3px;
   margin-bottom: 1.5em;
   border: 1px solid #cccccc;
 }
-/* line 266, ../scss/breakpoints/_base.scss */
 .hentry header {
   border-bottom: 1px solid #f8f9fa;
   padding: 1.5em;
 }
-/* line 271, ../scss/breakpoints/_base.scss */
 .hentry footer {
   padding: 1.5em;
   border-top: 1px solid #f8f9fa;
 }
-/* line 275, ../scss/breakpoints/_base.scss */
 .hentry footer p {
   margin: 0;
 }
 
 /* end .hentry */
-/* line 282, ../scss/breakpoints/_base.scss */
 .single-title,
 .page-title,
 .entry-title {
@@ -1727,7 +1602,6 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-/* line 307, ../scss/breakpoints/_base.scss */
 .byline {
   color: #9fa6b4;
   font-style: italic;
@@ -1735,7 +1609,6 @@ POSTS & CONTENT STYLES
 }
 
 /* entry content */
-/* line 316, ../scss/breakpoints/_base.scss */
 .entry-content {
   padding: 1.5em 1.5em 0;
   /*
@@ -1745,17 +1618,14 @@ POSTS & CONTENT STYLES
   but it's up to you. Feel free to change it up.
   */
 }
-/* line 319, ../scss/breakpoints/_base.scss */
 .entry-content p {
   margin: 0 0 1.5em;
 }
-/* line 344, ../scss/breakpoints/_base.scss */
 .entry-content table {
   width: 100%;
   border: 1px solid #eaedf2;
   margin-bottom: 1.5em;
 }
-/* line 349, ../scss/breakpoints/_base.scss */
 .entry-content table caption {
   margin: 0 0 7px;
   font-size: 0.75em;
@@ -1763,34 +1633,27 @@ POSTS & CONTENT STYLES
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 358, ../scss/breakpoints/_base.scss */
 .entry-content tr {
   border-bottom: 1px solid #eaedf2;
 }
-/* line 361, ../scss/breakpoints/_base.scss */
 .entry-content tr:nth-child(even) {
   background-color: #f8f9fa;
 }
-/* line 366, ../scss/breakpoints/_base.scss */
 .entry-content td {
   padding: 7px;
   border-right: 1px solid #eaedf2;
 }
-/* line 370, ../scss/breakpoints/_base.scss */
 .entry-content td:last-child {
   border-right: 0;
 }
-/* line 375, ../scss/breakpoints/_base.scss */
 .entry-content th {
   background-color: #f8f9fa;
   border-bottom: 1px solid #eaedf2;
   border-right: 1px solid #eaedf2;
 }
-/* line 380, ../scss/breakpoints/_base.scss */
 .entry-content th:last-child {
   border-right: 0;
 }
-/* line 385, ../scss/breakpoints/_base.scss */
 .entry-content blockquote {
   margin: 0 0 1.5em 0.75em;
   padding: 0 0 0 0.75em;
@@ -1798,20 +1661,17 @@ POSTS & CONTENT STYLES
   font-style: italic;
   color: #9fa6b4;
 }
-/* line 400, ../scss/breakpoints/_base.scss */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 407, ../scss/breakpoints/_base.scss */
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 423, ../scss/breakpoints/_base.scss */
 .entry-content .size-auto,
 .entry-content .size-full,
 .entry-content .size-large,
@@ -1820,7 +1680,6 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto;
 }
-/* line 432, ../scss/breakpoints/_base.scss */
 .entry-content pre {
   background: black;
   color: #f8f9fa;
@@ -1831,20 +1690,17 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
-/* line 443, ../scss/breakpoints/_base.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
 }
-/* line 449, ../scss/breakpoints/_base.scss */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 455, ../scss/breakpoints/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
@@ -1855,7 +1711,6 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
-/* line 489, ../scss/breakpoints/_base.scss */
 .tags {
   margin: 0;
 }
@@ -1863,17 +1718,14 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 497, ../scss/breakpoints/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.5em 0;
 }
 
-/* line 501, ../scss/breakpoints/_base.scss */
 .pagination {
   text-align: center;
 }
-/* line 504, ../scss/breakpoints/_base.scss */
 .pagination ul {
   display: inline-block;
   background-color: white;
@@ -1882,7 +1734,6 @@ PAGE NAVI STYLES
   clear: both;
   border-radius: 3px;
 }
-/* line 513, ../scss/breakpoints/_base.scss */
 .pagination li {
   padding: 0;
   margin: 0;
@@ -1891,7 +1742,6 @@ PAGE NAVI STYLES
   overflow: hidden;
   border-right: 1px solid #eaedf2;
 }
-/* line 522, ../scss/breakpoints/_base.scss */
 .pagination a, .pagination span {
   margin: 0;
   text-decoration: none;
@@ -1904,17 +1754,14 @@ PAGE NAVI STYLES
   display: block;
   color: #2980b9;
 }
-/* line 534, ../scss/breakpoints/_base.scss */
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
   background-color: #2980b9;
   color: white;
 }
-/* line 540, ../scss/breakpoints/_base.scss */
 .pagination .current {
   cursor: default;
   color: #5c6b80;
 }
-/* line 544, ../scss/breakpoints/_base.scss */
 .pagination .current:hover, .pagination .current:focus {
   background-color: white;
   color: #5c6b80;
@@ -1922,11 +1769,9 @@ PAGE NAVI STYLES
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 557, ../scss/breakpoints/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 561, ../scss/breakpoints/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1936,7 +1781,6 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 572, ../scss/breakpoints/_base.scss */
 #comments-title {
   padding: 0.75em;
   margin: 0;
@@ -1944,13 +1788,11 @@ COMMENT STYLES
   /* number of comments span */
 }
 
-/* line 592, ../scss/breakpoints/_base.scss */
 .commentlist {
   margin: 0;
   list-style-type: none;
 }
 
-/* line 597, ../scss/breakpoints/_base.scss */
 .comment {
   position: relative;
   clear: both;
@@ -1962,78 +1804,63 @@ COMMENT STYLES
   /* end children */
   /* general comment classes */
 }
-/* line 604, ../scss/breakpoints/_base.scss */
 .comment .comment-author {
   padding: 7px;
   border: 0;
 }
-/* line 610, ../scss/breakpoints/_base.scss */
 .comment .vcard {
   margin-left: 50px;
 }
-/* line 613, ../scss/breakpoints/_base.scss */
 .comment .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 621, ../scss/breakpoints/_base.scss */
 .comment .vcard time {
   display: block;
   font-size: 0.9em;
   font-style: italic;
 }
-/* line 626, ../scss/breakpoints/_base.scss */
 .comment .vcard time a {
   color: #9fa6b4;
   text-decoration: none;
 }
-/* line 630, ../scss/breakpoints/_base.scss */
 .comment .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 640, ../scss/breakpoints/_base.scss */
 .comment .vcard .avatar {
   position: absolute;
   left: 16px;
   border-radius: 50%;
 }
-/* line 648, ../scss/breakpoints/_base.scss */
 .comment:last-child {
   margin-bottom: 0;
 }
-/* line 652, ../scss/breakpoints/_base.scss */
 .comment .children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 670, ../scss/breakpoints/_base.scss */
 .comment[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 674, ../scss/breakpoints/_base.scss */
 .comment.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 679, ../scss/breakpoints/_base.scss */
 .comment:not(.depth-1) {
   margin-top: 0;
   margin-left: 7px;
   padding: 7px;
 }
-/* line 692, ../scss/breakpoints/_base.scss */
 .comment.odd {
   background-color: white;
 }
-/* line 695, ../scss/breakpoints/_base.scss */
 .comment.even {
   background: #f8f9fa;
 }
 
 /* comment meta */
 /* comment content */
-/* line 729, ../scss/breakpoints/_base.scss */
 .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
@@ -2042,7 +1869,6 @@ COMMENT STYLES
 
 /* end .commentlist .comment_content */
 /* comment reply link */
-/* line 738, ../scss/breakpoints/_base.scss */
 .comment-reply-link {
   font-size: 0.9em;
   float: right;
@@ -2050,7 +1876,6 @@ COMMENT STYLES
 
 /* end .commentlist .comment-reply-link */
 /* edit comment link */
-/* line 750, ../scss/breakpoints/_base.scss */
 .comment-edit-link {
   font-style: italic;
   margin: 0 7px;
@@ -2061,34 +1886,28 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 763, ../scss/breakpoints/_base.scss */
 .comment-respond {
   padding: 1.5em;
   border-top: 1px solid #f8f9fa;
 }
 
-/* line 769, ../scss/breakpoints/_base.scss */
 #reply-title {
   margin: 0;
 }
 
-/* line 773, ../scss/breakpoints/_base.scss */
 .logged-in-as {
   color: #9fa6b4;
   font-style: italic;
   margin: 0;
 }
-/* line 778, ../scss/breakpoints/_base.scss */
 .logged-in-as a {
   color: #5c6b80;
 }
 
-/* line 783, ../scss/breakpoints/_base.scss */
 .comment-form-comment {
   margin: 1.5em 0 0.75em;
 }
 
-/* line 787, ../scss/breakpoints/_base.scss */
 .form-allowed-tags {
   padding: 1.5em;
   background-color: #f8f9fa;
@@ -2096,14 +1915,12 @@ COMMENT FORM STYLES
 }
 
 /* comment submit button */
-/* line 794, ../scss/breakpoints/_base.scss */
 #submit {
   float: right;
   font-size: 1em;
 }
 
 /* comment form title */
-/* line 801, ../scss/breakpoints/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -2111,13 +1928,11 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 814, ../scss/breakpoints/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 819, ../scss/breakpoints/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -2125,12 +1940,10 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 835, ../scss/breakpoints/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
 
-/* line 852, ../scss/breakpoints/_base.scss */
 .no-widgets {
   background-color: white;
   padding: 1.5em;
@@ -2143,7 +1956,6 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 865, ../scss/breakpoints/_base.scss */
 .footer {
   clear: both;
   background-color: black;
@@ -2163,12 +1975,10 @@ view.
 /******************************************
 ADMIN BAR CUSTOMIZATION
 ******************************************/
-/* line 899, ../scss/breakpoints/_base.scss */
 html body div#wpadminbar {
   border-bottom: 1px solid #444;
   z-index: 9999 !important;
 }
-/* line 902, ../scss/breakpoints/_base.scss */
 html body div#wpadminbar > .wpadminbar-activator {
   display: block;
   position: absolute;
@@ -2197,7 +2007,6 @@ html body div#wpadminbar > .wpadminbar-activator {
   border-top: 0;
   cursor: pointer;
 }
-/* line 916, ../scss/breakpoints/_base.scss */
 html body div#wpadminbar > .wpadminbar-activator:after {
   content: "";
   border-style: solid;
@@ -2208,59 +2017,138 @@ html body div#wpadminbar > .wpadminbar-activator:after {
   left: 50%;
   top: 5px;
 }
-/* line 928, ../scss/breakpoints/_base.scss */
 html body div#wpadminbar.wpadminbar-shown > .wpadminbar-activator {
   display: none;
 }
-/* line 934, ../scss/breakpoints/_base.scss */
 html body.hide-admin-bar div#wpadminbar {
   display: none;
 }
 
-/* line 942, ../scss/breakpoints/_base.scss */
-body.home #main section {
-  padding-top: 80px;
-  position: relative;
-  background-size: cover;
+body.home #container, body.home #content, body.home #main {
+  height: 100%;
 }
-/* line 946, ../scss/breakpoints/_base.scss */
-body.home #main section.dark {
-  background-color: black;
+body.home .dark {
+  color: #dbdbce;
 }
-/* line 949, ../scss/breakpoints/_base.scss */
-body.home #main section.light {
-  background-color: white;
+body.home .dark h2, body.home .dark .price, body.home .dark .sub {
+  color: #986c2c;
 }
-/* line 952, ../scss/breakpoints/_base.scss */
-body.home #main section .bg-shell {
-  background-size: 200px;
-  background-position: 0;
-  background-repeat: no-repeat;
-  height: 200px;
+body.home .light {
+  color: black;
 }
-/* line 960, ../scss/breakpoints/_base.scss */
-body.home h1, body.home #logo {
+body.home .light h2, body.home .light .price, body.home .light .sub {
+  color: #8d5c2c;
+}
+body.home .subdued {
+  color: #583f1b;
+}
+body.home #logo, body.home #main > section.hide-sitename h2 {
   font-family: "postoffice";
-}
-/* line 963, ../scss/breakpoints/_base.scss */
-body.home #logo {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
   width: 100%;
   text-align: center;
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: 2px;
   margin: 0;
+  opacity: 0;
+  color: #dbdbce;
 }
-/* line 973, ../scss/breakpoints/_base.scss */
-body.home #logo .sub {
+body.home #logo > a, body.home #main > section.hide-sitename h2 > a {
+  color: #dbdbce;
+  position: relative;
+  top: 8px;
+}
+body.home #logo.light, body.home #logo.light > a, body.home #main > section.hide-sitename h2.light, body.home #main > section.hide-sitename h2.light > a {
+  color: black;
+}
+body.home #logo .primary > span, body.home #main > section.hide-sitename h2 .primary > span {
+  display: none;
+}
+body.home #logo .primary > span:first-child, body.home #main > section.hide-sitename h2 .primary > span:first-child {
+  display: inline;
+}
+body.home #logo .sub, body.home #main > section.hide-sitename h2 .sub {
   font-family: "ironbrine", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #986c2c;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 9px;
+  line-height: 14px;
+  letter-spacing: 4px;
   display: block;
+}
+body.home #main > section.hide-sitename h2 {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+}
+body.home #main > section {
+  position: relative;
+  min-height: 100%;
+  background-image: none !important;
+}
+body.home #main > section.dark {
+  background-color: black;
+}
+body.home #main > section.light {
+  background-color: white;
+}
+body.home #main > section .bg-shell {
+  background-size: 169%;
+  background-repeat: no-repeat;
+  height: 360px;
+}
+body.home #main > section.studio .bg-shell {
+  background-position: 1% 100%;
+}
+body.home #main > section.studio h2 {
+  background: url(../images/divider.png) no-repeat 0 100%;
+  background-size: 147px;
+}
+body.home #main > section.location .bg-shell {
+  background-position: 100% 50%;
+}
+body.home #main > section.location h2 {
+  background: url(../images/divider-dark.png) no-repeat 0 100%;
+  background-size: 165px;
+}
+body.home #main > section.hide-sitename .section-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body.home #main > section.rentals {
+  padding-bottom: 20px;
+}
+body.home #main > section.rentals .bg-shell {
+  display: none;
+}
+body.home #main > section.rentals .section-content {
+  padding: 90px 0 0;
+}
+body.home #main > section.rentals .subsection {
+  padding: 300px 20px 0;
+}
+body.home #main > section.rentals .subsection.phaseone {
+  background: url(../images/bg-images/camera-phaseone.jpg) no-repeat 50% 15px/90%;
+}
+body.home #main > section.rentals .subsection.canon {
+  background: url(../images/bg-images/camera-canon.jpg) no-repeat 65% 15px/115%;
+}
+body.home #main > section h2 {
+  padding-bottom: 20px;
+}
+body.home #main .section-content {
+  padding: 20px 35px;
+  font-size: 13px;
+}
+body.home #main .section-content h3 {
+  margin-bottom: 11px;
+}
+body.home #main .section-content .asterisk p {
+  margin: 0;
 }
 
 /*********************
@@ -2296,23 +2184,19 @@ tweeners.
   NAVIGATION STYLES
   *********************/
   /* .menu is clearfixed inside mixins.scss */
-  /* line 33, ../scss/breakpoints/_481up.scss */
   .menu {
     /* end .menu ul */
   }
-  /* line 34, ../scss/breakpoints/_481up.scss */
   .menu ul {
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 35, ../scss/breakpoints/_481up.scss */
   .menu ul li {
     /*
     plan your menus and drop-downs wisely.
     */
   }
-  /* line 36, ../scss/breakpoints/_481up.scss */
   .menu ul li a {
     /*
     you can use hover styles here even though this size
@@ -2325,23 +2209,19 @@ tweeners.
   POSTS & CONTENT STYLES
   *********************/
   /* entry content */
-  /* line 81, ../scss/breakpoints/_481up.scss */
   .entry-content {
     /* at this larger size, we can start to align images */
   }
-  /* line 85, ../scss/breakpoints/_481up.scss */
   .entry-content .alignleft, .entry-content img.alignleft {
     margin-right: 1.5em;
     display: inline;
     float: left;
   }
-  /* line 90, ../scss/breakpoints/_481up.scss */
   .entry-content .alignright, .entry-content img.alignright {
     margin-left: 1.5em;
     display: inline;
     float: right;
   }
-  /* line 95, ../scss/breakpoints/_481up.scss */
   .entry-content .aligncenter, .entry-content img.aligncenter {
     margin-right: auto;
     margin-left: auto;
@@ -2385,7 +2265,6 @@ you can add resource intensive styles.
   /*********************
   LAYOUT & GRID STYLES
   *********************/
-  /* line 26, ../scss/breakpoints/_768up.scss */
   .wrap {
     width: 760px;
   }
@@ -2396,19 +2275,16 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 42, ../scss/breakpoints/_768up.scss */
   .nav {
     border: 0;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 44, ../scss/breakpoints/_768up.scss */
   .nav ul {
     background: black;
     margin-top: 0;
   }
-  /* line 48, ../scss/breakpoints/_768up.scss */
   .nav li {
     float: left;
     position: relative;
@@ -2417,7 +2293,6 @@ you can add resource intensive styles.
     */
     /* showing sub-menus */
   }
-  /* line 52, ../scss/breakpoints/_768up.scss */
   .nav li a {
     border-bottom: 0;
     /*
@@ -2425,12 +2300,10 @@ you can add resource intensive styles.
     has the possibility of being a mobile device.
     */
   }
-  /* line 59, ../scss/breakpoints/_768up.scss */
   .nav li a:hover, .nav li a:focus {
     color: white;
     text-decoration: underline;
   }
-  /* line 71, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
@@ -2441,7 +2314,6 @@ you can add resource intensive styles.
     z-index: 8999;
     /* highlight sub-menu current page */
   }
-  /* line 80, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li,
   .nav li ul.children li {
     /*
@@ -2450,7 +2322,6 @@ you can add resource intensive styles.
     for usability. k, bai.
     */
   }
-  /* line 82, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li a,
   .nav li ul.children li a {
     padding-left: 10px;
@@ -2459,18 +2330,15 @@ you can add resource intensive styles.
     width: 180px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 99, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
     border-bottom: 0;
   }
-  /* line 109, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li ul,
   .nav li ul.children li ul {
     top: 0;
     left: 100%;
   }
-  /* line 124, ../scss/breakpoints/_768up.scss */
   .nav li:hover > ul {
     top: auto;
     visibility: visible;
@@ -2480,28 +2348,23 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 144, ../scss/breakpoints/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 148, ../scss/breakpoints/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 153, ../scss/breakpoints/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 158, ../scss/breakpoints/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 166, ../scss/breakpoints/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -2526,7 +2389,6 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 274, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
@@ -2536,6 +2398,114 @@ you can add resource intensive styles.
   }
 
   /* end .footer-links */
+  body.home #main > section {
+    height: 100%;
+  }
+  body.home #main > section .bg-shell {
+    height: 620px;
+  }
+  body.home #main > section.studio .bg-shell {
+    background-position: 0 100%;
+    background-size: 152%;
+  }
+  body.home #main > section.location .bg-shell {
+    background-position: 100% 0;
+    background-size: 136%;
+  }
+  body.home #main > section.rentals {
+    background: black;
+  }
+  body.home #main > section.rentals .section-content {
+    padding-top: 68px;
+  }
+  body.home #main > section.rentals .subsection {
+    padding: 340px 35px 0;
+  }
+  body.home #main > section.rentals .subsection.phaseone {
+    background-size: 55%;
+  }
+  body.home #main > section.rentals .subsection.canon {
+    background-size: 82%;
+  }
+  body.home #logo, body.home #main > section.hide-sitename h2 {
+    padding-top: 11px;
+  }
+  body.home #logo .primary > span, body.home #main > section.hide-sitename h2 .primary > span {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Desktop Stylsheet
+  
+  This is the desktop size. It's larger than an iPad so it will only
+  be seen on the Desktop.
+  
+  ******************************************************************/
+  body.home #main > section {
+    height: 100%;
+  }
+  body.home #main > section .bg-shell {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+  }
+  body.home #main > section .section-content {
+    position: absolute;
+  }
+  body.home #main > section.studio .bg-shell {
+    background-position: 20% 100%;
+    background-size: 130%;
+  }
+  body.home #main > section.studio .section-content {
+    right: 5%;
+    top: 22%;
+  }
+  body.home #main > section.location .bg-shell {
+    background-position: 69% 0;
+    background-size: cover;
+  }
+  body.home #main > section.location .section-content {
+    left: 1%;
+    top: 21%;
+  }
+  body.home #main > section.rentals .bg-shell {
+    display: block;
+    background-position: 50% 100%;
+  }
+  body.home #main > section.rentals .subsection {
+    background: none !important;
+    padding: 0;
+    position: absolute;
+  }
+  body.home #main > section.rentals .subsection.phaseone {
+    top: 28%;
+    right: 17%;
+  }
+  body.home #main > section.rentals .subsection.canon {
+    bottom: 10%;
+    left: 22%;
+  }
+  body.home #main > section.rentals .info {
+    margin-left: 16px;
+  }
+  body.home #main > section.rentals h3 {
+    font-size: 30px;
+  }
+  body.home #main > section.rentals h3 .price {
+    font-size: 15px;
+  }
+  body.home #main > section > * {
+    position: relative;
+    z-index: 1;
+  }
 }
 /*********************
 DESKTOP
@@ -2554,9 +2524,78 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
-  /* line 12, ../scss/breakpoints/_1030up.scss */
-  .wrap {
-    width: 1040px;
+  body.home #logo, body.home #main > section.hide-sitename h2 {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    padding-top: 40px;
+  }
+  body.home #logo .sub, body.home #main > section.hide-sitename h2 .sub {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 7px;
+  }
+  body.home #main > section {
+    font-size: 15px;
+  }
+  body.home #main > section h2 {
+    font-size: 36px;
+    padding-bottom: 30px;
+    margin-bottom: 18px;
+  }
+  body.home #main > section h3 {
+    font-size: 20px;
+  }
+  body.home #main > section .price, body.home #main > section .info {
+    font-size: 15px;
+  }
+  body.home #main > section .info {
+    margin-left: 40px;
+  }
+  body.home #main > section .info li {
+    margin-bottom: 15px;
+  }
+  body.home #main > section .asterisk {
+    line-height: 1.2em;
+    float: right;
+    margin-top: 15px;
+  }
+  body.home #main > section.studio .bg-shell {
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  body.home #main > section.studio h2 {
+    background-size: 233px;
+  }
+  body.home #main > section.studio .section-content {
+    right: 9%;
+    top: 22%;
+  }
+  body.home #main > section.location .bg-shell {
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  body.home #main > section.location h2 {
+    background-size: 264px;
+  }
+  body.home #main > section.location .section-content {
+    left: 5%;
+    top: 22%;
+  }
+  body.home #main > section.rentals .subsection.phaseone {
+    top: 27%;
+    right: 15%;
+  }
+  body.home #main > section.rentals .subsection.canon {
+    bottom: 6%;
+    left: 20%;
+  }
+  body.home #main > section.rentals h3 {
+    font-size: 36px;
+  }
+  body.home #main > section > * {
+    position: relative;
+    z-index: 1;
   }
 }
 /*********************
@@ -2574,6 +2613,124 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
+  body.home #main > section.studio .section-content {
+    right: 12%;
+  }
+  body.home #main > section.rentals .subsection.phaseone {
+    top: 27%;
+    right: 20%;
+  }
+  body.home #main > section.rentals .subsection.canon {
+    bottom: 6%;
+    left: 25%;
+  }
+  body.home #main > section.rentals h3 {
+    font-size: 36px;
+  }
+  body.home #main > section.rentals h3 .price {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /******************************************************************
+  Site Name: 
+  Author: 
+  
+  Stylesheet: Super Large Monitor Stylesheet
+  
+  You can add some advanced styles here if you like. This kicks in
+  on larger screens.
+  
+  ******************************************************************/
+  body.home #logo, body.home #main > section.hide-sitename h2 {
+    font-size: 80px;
+    line-height: 80px;
+    padding-top: 52px;
+  }
+  body.home #logo .sub, body.home #main > section.hide-sitename h2 .sub {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 10px;
+  }
+  body.home #main > section {
+    font-size: 19px;
+  }
+  body.home #main > section h2 {
+    font-size: 48px;
+    background-size: auto !important;
+    padding-bottom: 40px;
+    margin-bottom: 28px;
+  }
+  body.home #main > section h3 {
+    font-size: 24px;
+  }
+  body.home #main > section .price, body.home #main > section .info {
+    font-size: 19px;
+  }
+  body.home #main > section .info {
+    margin-left: 50px;
+  }
+  body.home #main > section .info li {
+    margin-bottom: 20px;
+  }
+  body.home #main > section.studio .bg-shell {
+    background-position: 50% 65%;
+  }
+  body.home #main > section.studio .section-content {
+    right: 16%;
+  }
+  body.home #main > section.location .section-content {
+    left: 7%;
+  }
+  body.home #main > section.rentals .bg-shell {
+    background-size: contain;
+  }
+  body.home #main > section.rentals .subsection.phaseone {
+    right: 18%;
+  }
+  body.home #main > section.rentals .subsection.canon {
+    left: 22%;
+  }
+  body.home #main > section.rentals h3 {
+    font-size: 40px;
+  }
+  body.home #main > section.rentals h3 .price {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1640px) {
+  /******************************************************************
+  Site Name: 
+  Author: 
+  
+  Stylesheet: Super Large Monitor Stylesheet
+  
+  You can add some advanced styles here if you like. This kicks in
+  on larger screens.
+  
+  ******************************************************************/
+  body.home #logo, body.home #main > section.hide-sitename h2 {
+    font-size: 80px;
+    line-height: 80px;
+    padding-top: 52px;
+  }
+  body.home #logo .sub, body.home #main > section.hide-sitename h2 .sub {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 10px;
+  }
+  body.home #main > section.rentals .subsection.phaseone {
+    right: 23%;
+  }
+  body.home #main > section.rentals .subsection.canon {
+    left: 27%;
+  }
+  body.home #main > section.rentals h3 {
+    font-size: 48px;
+  }
+  body.home #main > section.rentals h3 .price {
+    font-size: 24px;
+  }
 }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
@@ -2641,7 +2798,6 @@ be set to display none.
   though, go for it.
   
   ******************************************************************/
-  /* line 13, ../scss/partials/_print.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -2650,44 +2806,36 @@ be set to display none.
     -ms-filter: none !important;
   }
 
-  /* line 21, ../scss/partials/_print.scss */
   a, a:visited {
     color: #444 !important;
     text-decoration: underline;
   }
-  /* line 26, ../scss/partials/_print.scss */
   a:after, a:visited:after {
     content: " (" attr(href) ")";
   }
-  /* line 31, ../scss/partials/_print.scss */
   a abbr[title]:after, a:visited abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 36, ../scss/partials/_print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 42, ../scss/partials/_print.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 47, ../scss/partials/_print.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 51, ../scss/partials/_print.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 55, ../scss/partials/_print.scss */
   img {
     max-width: 100% !important;
   }
@@ -2695,19 +2843,16 @@ be set to display none.
   @page {
     margin: 0.5cm;
   }
-  /* line 63, ../scss/partials/_print.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 68, ../scss/partials/_print.scss */
   h2,
   h3 {
     page-break-after: avoid;
   }
 
-  /* line 74, ../scss/partials/_print.scss */
   .sidebar,
   .page-navigation,
   .wp-prev-next,
