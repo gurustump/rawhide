@@ -78,6 +78,14 @@ body.home {
 					}
 				}
 			}
+			&.clients {
+				.gallery {
+					width:900px;
+					& > figure {
+						width:180px;
+					}
+				}
+			}
 			&  > * {
 				position:relative;
 				z-index:1;

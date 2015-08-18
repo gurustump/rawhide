@@ -319,6 +319,14 @@ body.home {
 					}
 				}
 			}
+			&.clients {
+				.gallery {
+					width:540px;
+					& > figure {
+						width:180px;
+					}
+				}
+			}
 		}
 	}
 	#logo, #main > section.hide-sitename h2 {

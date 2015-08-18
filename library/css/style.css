@@ -1435,6 +1435,10 @@ LAYOUT & GRID STYLES
   margin: 0 auto;
 }
 
+.hide {
+  display: none;
+}
+
 /*********************
 LINK STYLES
 *********************/
@@ -2084,6 +2088,9 @@ body.home #main > section.hide-sitename h2 {
   position: absolute;
   top: 10px;
 }
+body.home #main > section.hide-sitename.light h2 {
+  color: black;
+}
 body.home #main > section {
   position: relative;
   min-height: 100%;
@@ -2136,6 +2143,104 @@ body.home #main > section.rentals .subsection.phaseone {
 }
 body.home #main > section.rentals .subsection.canon {
   background: url(../images/bg-images/camera-canon.jpg) no-repeat 65% 15px/115%;
+}
+body.home #main > section.clients .bg-shell {
+  background-repeat: repeat;
+  background-size: auto;
+}
+body.home #main > section.clients .section-content {
+  padding-top: 80px;
+}
+body.home #main > section.clients .gallery {
+  width: 300px;
+  max-width: 1435px;
+  margin: 0 auto;
+}
+body.home #main > section.clients .gallery:after {
+  content: ".";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+body.home #main > section.clients .gallery > figure {
+  width: 100px;
+  float: left;
+}
+body.home #main > section.clients .gallery > figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body.home #main > section.clients .bg-shell, body.home #main > section.contact .bg-shell {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+body.home #main > section.contact {
+  height: 100%;
+  text-align: center;
+}
+body.home #main > section.contact .bg-shell {
+  background-size: cover;
+}
+body.home #main > section.contact .contact-items {
+  font-size: 18px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+}
+body.home #main > section.contact .contact-items > li {
+  line-height: 2em;
+}
+body.home #main > section.contact .contact-items > li > * {
+  padding-left: 25px;
+}
+body.home #main > section.contact .contact-items > li.location > * {
+  background: url(../images/ic-location.png) no-repeat 4px 50%/auto 20px;
+}
+body.home #main > section.contact .contact-items > li.email > * {
+  background: url(../images/ic-email.png) no-repeat 0 50%/20px auto;
+}
+body.home #main > section.contact .contact-items > li.telephone > * {
+  background: url(../images/ic-phone.png) no-repeat 4px 50%/auto 20px;
+}
+body.home #main > section.contact .contact-items > li.ratesheet > * {
+  background: url(../images/ic-pdf.png) no-repeat 0 50%/20px auto;
+}
+body.home #main > section.contact .contact-items a {
+  color: black;
+  text-decoration: none;
 }
 body.home #main > section h2 {
   padding-bottom: 20px;
@@ -2427,6 +2532,12 @@ you can add resource intensive styles.
   body.home #main > section.rentals .subsection.canon {
     background-size: 82%;
   }
+  body.home #main > section.clients .gallery {
+    width: 540px;
+  }
+  body.home #main > section.clients .gallery > figure {
+    width: 180px;
+  }
   body.home #logo, body.home #main > section.hide-sitename h2 {
     padding-top: 11px;
   }
@@ -2501,6 +2612,12 @@ you can add resource intensive styles.
   }
   body.home #main > section.rentals h3 .price {
     font-size: 15px;
+  }
+  body.home #main > section.clients .gallery {
+    width: 900px;
+  }
+  body.home #main > section.clients .gallery > figure {
+    width: 180px;
   }
   body.home #main > section > * {
     position: relative;
@@ -2592,6 +2709,9 @@ you can add resource intensive styles.
   }
   body.home #main > section.rentals h3 {
     font-size: 36px;
+  }
+  body.home #main > section.clients .section-content {
+    padding-top: 110px;
   }
   body.home #main > section > * {
     position: relative;
@@ -2697,6 +2817,9 @@ This is for the larger monitors and possibly full screen viewers.
   body.home #main > section.rentals h3 .price {
     font-size: 24px;
   }
+  body.home #main > section.clients .section-content {
+    padding-top: 170px;
+  }
 }
 @media only screen and (min-width: 1640px) {
   /******************************************************************
@@ -2730,6 +2853,12 @@ This is for the larger monitors and possibly full screen viewers.
   }
   body.home #main > section.rentals h3 .price {
     font-size: 24px;
+  }
+  body.home #main > section.clients .gallery {
+    width: auto;
+  }
+  body.home #main > section.clients .gallery > figure {
+    width: auto;
   }
 }
 /*********************

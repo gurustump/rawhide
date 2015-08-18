@@ -79,6 +79,9 @@ LAYOUT & GRID STYLES
 	width: 96%;
 	margin: 0 auto;
 }
+.hide {
+	display:none;
+}
 
 /*********************
 LINK STYLES
@@ -1005,10 +1008,17 @@ body.home {
 			display:block;
 		}
 	}
-	#main > section.hide-sitename h2 {
-		opacity:1;
-		position:absolute;
-		top:10px
+	#main > section.hide-sitename {
+		h2 {
+			opacity:1;
+			position:absolute;
+			top:10px
+		}
+		&.light {
+			h2 {
+				color:$black;
+			}
+		}
 	}
 	#main {
 		& > section {
@@ -1055,7 +1065,7 @@ body.home {
 				padding-bottom:20px;
 				.bg-shell {
 					display:none;
-				}
+				}	
 				.section-content {
 					padding:90px 0 0;
 				}
@@ -1066,6 +1076,78 @@ body.home {
 					}
 					&.canon {
 						background:url(../images/bg-images/camera-canon.jpg) no-repeat 65% 15px / 115%;
+					}
+				}
+			}
+			&.clients {
+				.bg-shell {
+					background-repeat:repeat;
+					background-size:auto;
+				}
+				.section-content {
+					padding-top:80px;
+				}
+				.gallery {
+					width:300px;
+					max-width:1435px;
+					margin:0 auto;
+					&:after {
+						@include clearfix;
+					}
+					& > figure {
+						width:100px;
+						float:left;
+						img {
+							display:block;
+							max-width:100%;
+							height:auto;
+						}
+					}
+				}
+			}
+			&.clients, &.contact {
+				.bg-shell {
+					height:100%;
+					width:100%;
+					position:absolute;
+					left:0;
+					top:0;
+					z-index:0;
+				}
+			}
+			&.contact {
+				.bg-shell {
+					background-size:cover;
+				}
+				height:100%;
+				text-align:center;
+				.contact-items {
+					font-size:18px;
+					@include v-center;
+					display:inline-block;
+					text-align:left;
+					margin:0;
+					& > li {
+						line-height:2em;
+						& > * {
+							padding-left:25px;
+						}
+						&.location > *{
+							background:url(../images/ic-location.png) no-repeat 4px 50% / auto 20px;
+						}
+						&.email > * {
+							background:url(../images/ic-email.png) no-repeat 0 50% / 20px auto;
+						}
+						&.telephone > * {
+							background:url(../images/ic-phone.png) no-repeat 4px 50% / auto 20px;
+						}
+						&.ratesheet > * {
+							background:url(../images/ic-pdf.png) no-repeat 0 50% / 20px auto;
+						}
+					}
+					a {
+						color:$black;
+						text-decoration:none;
 					}
 				}
 			}

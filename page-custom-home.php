@@ -32,7 +32,7 @@
 							<div class="bg-shell" style="background-image:url(<?php echo  $sectionMeta['_rawhide_metabox_bg_image'][0]; ?>);"></div>
 							<div class="section-content">
 								<h2><?php echo $section->post_title; ?></h2>
-								<?php echo $section->post_content; ?>
+								<?php echo apply_filters('the_content', $section->post_content); ?>
 							</div>
 						</section>
 					<?php }

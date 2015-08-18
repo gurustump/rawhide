@@ -426,6 +426,12 @@ body.home #main > section.rentals .subsection.phaseone {
 body.home #main > section.rentals .subsection.canon {
   background-size: 82%;
 }
+body.home #main > section.clients .gallery {
+  width: 540px;
+}
+body.home #main > section.clients .gallery > figure {
+  width: 180px;
+}
 body.home #logo, body.home #main > section.hide-sitename h2 {
   padding-top: 11px;
 }
@@ -511,6 +517,9 @@ body.home #main > section.rentals .subsection.canon {
 }
 body.home #main > section.rentals h3 {
   font-size: 36px;
+}
+body.home #main > section.clients .section-content {
+  padding-top: 110px;
 }
 body.home #main > section > * {
   position: relative;

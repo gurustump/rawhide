@@ -217,6 +217,7 @@ function bones_theme_support() {
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array(
 		'comment-list',
+		'gallery',           // gallery of images
 		'search-form',
 		'comment-form'
 	) );

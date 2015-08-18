@@ -74,6 +74,11 @@ body.home {
 					}
 				}
 			}
+			&.clients {
+				.section-content {
+					padding-top:170px;
+				}
+			}
 		}
 	}
 }

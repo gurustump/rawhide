@@ -39,6 +39,14 @@ body.home {
 					}
 				}
 			}
+			&.clients {
+				.gallery {
+					width:auto;
+					& > figure {
+						width:auto;
+					}
+				}
+			}
 		}
 	}
 }
