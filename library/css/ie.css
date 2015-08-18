@@ -432,6 +432,12 @@ body.home #main > section.clients .gallery {
 body.home #main > section.clients .gallery > figure {
   width: 180px;
 }
+body.home #main > section.contact .contact-items {
+  font-size: 24px;
+}
+body.home #main > section.contact .contact-items > li > * {
+  /*padding-left:30px;*/
+}
 body.home #logo, body.home #main > section.hide-sitename h2 {
   padding-top: 11px;
 }
@@ -520,6 +526,25 @@ body.home #main > section.rentals h3 {
 }
 body.home #main > section.clients .section-content {
   padding-top: 110px;
+}
+body.home #main > section.contact .contact-items {
+  font-size: 30px;
+}
+body.home #main > section.contact .contact-items > li > * {
+  padding-left: 120px;
+  display: block;
+}
+body.home #main > section.contact .contact-items > li.location > * {
+  background: url(../images/ic-location.png) no-repeat 10px 50%/auto;
+}
+body.home #main > section.contact .contact-items > li.email > * {
+  background: url(../images/ic-email.png) no-repeat 0 50%/auto;
+}
+body.home #main > section.contact .contact-items > li.telephone > * {
+  background: url(../images/ic-phone.png) no-repeat 10px 50%/auto;
+}
+body.home #main > section.contact .contact-items > li.ratesheet > * {
+  background: url(../images/ic-pdf.png) no-repeat 0 25%/auto;
 }
 body.home #main > section > * {
   position: relative;

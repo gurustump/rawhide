@@ -96,6 +96,29 @@ body.home {
 					padding-top:110px;
 				}
 			}
+			&.contact {
+				.contact-items {
+					font-size:30px;
+					& > li {
+						& > * {
+							padding-left:120px;
+							display:block;
+						}
+						&.location > *{
+							background:url(../images/ic-location.png) no-repeat 10px 50% / auto;
+						}
+						&.email > * {
+							background:url(../images/ic-email.png) no-repeat 0 50% / auto;
+						}
+						&.telephone > * {
+							background:url(../images/ic-phone.png) no-repeat 10px 50% / auto;
+						}
+						&.ratesheet > * {
+							background:url(../images/ic-pdf.png) no-repeat 0 25% / auto;
+						}
+					}
+				}
+			}
 			&  > * {
 				position:relative;
 				z-index:1;

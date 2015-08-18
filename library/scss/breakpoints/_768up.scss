@@ -327,6 +327,16 @@ body.home {
 					}
 				}
 			}
+			&.contact {
+				.contact-items {
+					font-size:24px;
+					& > li {
+						& > * {
+							/*padding-left:30px;*/
+						}
+					}
+				}
+			}
 		}
 	}
 	#logo, #main > section.hide-sitename h2 {

@@ -1128,21 +1128,22 @@ body.home {
 					text-align:left;
 					margin:0;
 					& > li {
-						line-height:2em;
+						line-height:3em;
 						& > * {
-							padding-left:25px;
+							padding-left:45px;
+							display:block;
 						}
 						&.location > *{
-							background:url(../images/ic-location.png) no-repeat 4px 50% / auto 20px;
+							background:url(../images/ic-location.png) no-repeat 6px 50% / auto 30px;
 						}
 						&.email > * {
-							background:url(../images/ic-email.png) no-repeat 0 50% / 20px auto;
+							background:url(../images/ic-email.png) no-repeat 0 50% / 30px auto;
 						}
 						&.telephone > * {
-							background:url(../images/ic-phone.png) no-repeat 4px 50% / auto 20px;
+							background:url(../images/ic-phone.png) no-repeat 6px 50% / auto 30px;
 						}
 						&.ratesheet > * {
-							background:url(../images/ic-pdf.png) no-repeat 0 50% / 20px auto;
+							background:url(../images/ic-pdf.png) no-repeat 0 50% / 30px auto;
 						}
 					}
 					a {
