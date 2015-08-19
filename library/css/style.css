@@ -2508,11 +2508,11 @@ you can add resource intensive styles.
     height: 100%;
   }
   body.home #main > section .bg-shell {
-    height: 620px;
+    height: 560px;
   }
   body.home #main > section.studio .bg-shell {
-    background-position: 0 100%;
-    background-size: 152%;
+    background-position: 0 85%;
+    background-size: 140%;
   }
   body.home #main > section.location .bg-shell {
     background-position: 100% 0;
@@ -2525,13 +2525,13 @@ you can add resource intensive styles.
     padding-top: 68px;
   }
   body.home #main > section.rentals .subsection {
-    padding: 340px 35px 0;
+    padding: 310px 35px 0;
   }
   body.home #main > section.rentals .subsection.phaseone {
-    background-size: 55%;
+    background-size: 50%;
   }
   body.home #main > section.rentals .subsection.canon {
-    background-size: 82%;
+    background-size: 75%;
   }
   body.home #main > section.clients .gallery {
     width: 540px;

@@ -127,24 +127,26 @@ jQuery(document).ready(function($) {
     win.scroll(function() {
         if (isHomePage) { 
 			homePageScrollBehavior();
-			waitForFinalEvent( function() {
-				// auto scroll to next or previious section if user starts to scroll there
-				var activeSection = getActiveSection();
-				var activePosPct = sectionPositionPct(activeSection);
-				if (activePosPct < 0) {
-					if (activePosPct > -.05) {
-						scrollToSection(activeSection);
+			if (mobileDeviceType() != 'mobile' && mobileDeviceType() != 'tablet') {
+				waitForFinalEvent( function() {
+					// auto scroll to next or previious section if user starts to scroll there
+					var activeSection = getActiveSection();
+					var activePosPct = sectionPositionPct(activeSection);
+					if (activePosPct < 0) {
+						if (activePosPct > -.05) {
+							scrollToSection(activeSection);
+						} else {
+							scrollToSection(getPrevSection());
+						}
 					} else {
-						scrollToSection(getPrevSection());
+						if (activePosPct < .05) {
+							scrollToSection(activeSection);
+						} else {
+							scrollToSection(getNextSection());
+						}
 					}
-				} else {
-					if (activePosPct < .05) {
-						scrollToSection(activeSection);
-					} else {
-						scrollToSection(getNextSection());
-					}
-				}
-			}, 50, 'scrollWindow');
+				}, 50, 'scrollWindow');
+			}
 		}
     });
 	
