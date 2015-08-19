@@ -125,7 +125,27 @@ jQuery(document).ready(function($) {
 		}, timeToWaitForLast, 'resizeWindow');
 	});
     win.scroll(function() {
-        if (isHomePage) { homePageScrollBehavior(); }
+        if (isHomePage) { 
+			homePageScrollBehavior();
+			waitForFinalEvent( function() {
+				// auto scroll to next or previious section if user starts to scroll there
+				var activeSection = getActiveSection();
+				var activePosPct = sectionPositionPct(activeSection);
+				if (activePosPct < 0) {
+					if (activePosPct > -.05) {
+						scrollToSection(activeSection);
+					} else {
+						scrollToSection(getPrevSection());
+					}
+				} else {
+					if (activePosPct < .05) {
+						scrollToSection(activeSection);
+					} else {
+						scrollToSection(getNextSection());
+					}
+				}
+			}, 50, 'scrollWindow');
+		}
     });
 	
 	function mobileDeviceType() {
@@ -147,48 +167,70 @@ jQuery(document).ready(function($) {
 		}
 	}
 	mobileDeviceBodyClass();
-    
-    function eTop(el) {
-        return el.offset().top - win.scrollTop();
-    }
-    
-    function homePageScrollBehavior() {
-        //console.log('title vis')
-        //console.log(eTop($('section.studio')))
-        var activeSection;
-        var activePosPct;
-        var winH = win.height();
-        $('#main > section').each(function() {
-            if (eTop($(this)) > -0.5 * winH && eTop($(this)) <= 0.5 * winH) {
-                activeSection = $(this);
-                return false;
-            }
-        });
-        //console.log('active')
-        //console.log(activeSection)
-        if (activeSection.hasClass('light')) {
-            $('#logo').addClass('light');
-        } else {
-            $('#logo').removeClass('light');
-        }
-        activePosPct = eTop(activeSection) / winH * -1;
-        console.log(activePosPct)
-        // -.6 to .12 is the range for activePosPct (active section position percentage) where the title will be visible, with opacity at 1 when activePosPct is 0
-        var opacity;
-        if (activeSection.hasClass('studio') || activeSection.hasClass('location')) {
-            if (activePosPct >= 0) {
-                opacity = -25 / 3 * activePosPct + 1;
-            } else {
-                opacity = 50 / 3 * activePosPct + 1;
-            }
-        } else {
-            opacity = 0;
-        }
-        $('#logo').css('opacity', opacity);
-    }
-    if (isHomePage) {
-        homePageScrollBehavior();
-    }
+
+	// gets the vertical distance of the current element (el, a jQuery object) from the top of the viewport
+	function eTop(el) {
+		return el.offset().top - win.scrollTop();
+	}
+	
+	// gets a jQuery object containing the section currently most visible on the page
+	function getActiveSection() {
+		var activeSection;
+		var winH = win.height();
+		$('#main > section').each(function() {
+			if (eTop($(this)) > -0.5 * winH && eTop($(this)) <= 0.5 * winH) {
+				activeSection = $(this);
+				return false;
+			}
+		});
+		return activeSection;
+	}
+	function getNextSection() {
+		return getActiveSection().next('#main > section')
+	}
+	function getPrevSection() {
+		return getActiveSection().prev('#main > section')
+	}
+	
+	// gets a decimal showing how far from the top of the viewport the given section is based on the height of the viewport
+	function sectionPositionPct(section) {
+		return eTop(section) / win.height() * -1;
+	}
+
+	// scrolls window to section
+	function scrollToSection(section) {
+		$('html,body').stop().animate({scrollTop: win.scrollTop() + eTop(section)});
+	}
+
+	// hides or shows the site title, depending on which section is visible, and how far from being even with the top of the page it is
+	function homePageScrollBehavior() {
+		var activeSection = getActiveSection();
+		var activePosPct;
+		var winH = win.height();
+		if (activeSection.hasClass('light')) {
+			$('#logo').addClass('light');
+		} else {
+			$('#logo').removeClass('light');
+		}
+		activePosPct = sectionPositionPct(activeSection) ;
+		// -.6 to .12 is the range for activePosPct (active section position percentage) where the title will be visible, with opacity at 1 when activePosPct is 0
+		var opacity;
+		if (activeSection.hasClass('studio') || activeSection.hasClass('location')) {
+			if (activePosPct >= 0) {
+				opacity = -25 / 3 * activePosPct + 1;
+			} else {
+				opacity = 50 / 3 * activePosPct + 1;
+			}
+		} else {
+			opacity = 0;
+		}
+		$('#logo').css('opacity', opacity);
+	}
+
+	if (isHomePage) {
+		homePageScrollBehavior();
+		scrollToSection(getActiveSection());
+	}
 	
 	// Hide wp admin bar
 	var adminBarMove = $('#wpadminbar').outerHeight()-1
