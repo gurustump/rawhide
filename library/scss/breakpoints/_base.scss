@@ -26,8 +26,11 @@ body {
 	line-height: 1.5;
 	color: $text-color;
 	background-color: $gray;
-  	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	&.lock {
+		overflow:hidden;
+	}
 }
 
 /********************
@@ -252,6 +255,149 @@ and more scalable.
 	}  /* end current highlighters */
 
 } /* end .nav */
+.trigger-nav-ov {
+	color:$white !important;
+	text-decoration:none;
+	font-family:$iron;
+	text-transform:uppercase;
+	position:fixed;
+	left:20px;
+	top:25px;
+	font-size:17px;
+	z-index:9998;
+	outline:none !important;
+	@include transition(top .275ms);
+	& > span {
+		float:left;
+		height:24px;
+		line-height:24px;
+	}
+	body.scrolled & {
+		top:10px;
+	}
+	.ic {
+		margin-right:10px;
+		@include box-sizing;
+		padding-top:5px;
+		@include transition(all 275ms);
+		& > span {
+			background:#373731;
+			@include border-radius(1px);
+			display:block;
+			height:3px;
+			margin-bottom:3px;
+			@include transition(all 275ms);
+			width:22px;
+		}
+	}
+	&.active {
+		.ic {
+			@include transform(rotate(-45deg));
+			& > span {
+				&.bar-1 {
+					@include transform(translateY(6px));
+				}
+				&.bar-2 {
+					opacity:0;
+				}
+				&.bar-3 {
+					@include transform(rotate(-90deg) translateX(5px));
+				}
+			}
+		}
+		.title {
+			opacity:0;
+		}
+	}
+}
+
+.nav-ov {
+	position:fixed;
+	overflow:auto;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	vertical-align:middle;
+	font-size:18px;
+	font-family:$iron;
+	font-weight:300;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	color:#fff;
+	text-align:center;
+	opacity:0;
+	@include transform(scale(.9));
+	@include transition(all .2s);
+	background-color:rgba(0,0,0,.9);
+	&.open {
+		z-index:9997;
+		opacity:1;
+		@include transform(scale(1));
+		padding-top:75px;
+	}
+	a {
+		&:hover {
+			text-decoration:none !important;
+		}
+	}
+	nav {
+		height:100%;
+		.dummy {
+			& > a {
+				display:none;
+				height:0 !important;
+			}
+			& > .sub-menu {
+				padding-top:0;
+				padding-bottom:0;
+			}
+		}
+		a {
+			text-decoration:none;
+			padding:0 30px !important;
+			overflow:hidden;
+		}
+		& > ul {
+			height:80%;
+			width:80%;
+			margin:0 auto;
+			& > li {
+				float:none;
+				height:20%;
+				&:first-child {
+					/* height:40%; */
+					& > a {
+						/* height:50%; */
+					}
+				}
+				& > a {
+					height:100%;
+					font-weight:400;
+					font-size:20px;
+					color:$white;
+					/* height:100%; 
+					line-height:100%; */
+					position:relative;
+					&:hover {
+						color:$white;
+					}
+					& > span {
+						display:block;
+						@include v-center;
+						& > span {
+							font-size:10px;
+							width:100%;
+							position:absolute;
+							left:0;
+							bottom:-18px;
+							font-weight:300;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 
 /*********************

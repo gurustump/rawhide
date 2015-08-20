@@ -9,6 +9,12 @@ on larger screens.
 
 ******************************************************************/
 
+.trigger-nav-ov {
+	left:120px;
+}
+.nav-ov nav > ul > li > a {
+    font-size:36px;
+}
 
 body.home {
 	#logo, #main > section.hide-sitename h2 {

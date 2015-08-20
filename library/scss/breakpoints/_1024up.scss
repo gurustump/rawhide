@@ -12,6 +12,28 @@ be seen on the Desktop.
 .wrap {
 	
 }
+.trigger-nav-ov {
+	left:40px;
+	top:15px;
+	.ic {
+		height:46px;
+		& > span {
+			@include border-radius(3px);
+			height:6px;
+			margin-bottom:6px;
+			width:40px;
+		}
+	}
+	&.active {
+		.ic {
+			& > span {
+				&.bar-3 {
+					@include transform(rotate(-90deg) translateX(17px));
+				}
+			}
+		}
+	}
+}
 
 body.home {
 	#main {

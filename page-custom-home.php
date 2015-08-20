@@ -28,7 +28,7 @@
 						$sectionMeta = get_post_meta($section->ID); 
 						// print_r($sectionMeta); 
 						?>
-						<section class="<?php echo $sectionMeta['_rawhide_metabox_css_class'][0]; ?>" style="background-image:url(<?php echo  $sectionMeta['_rawhide_metabox_bg_image'][0]; ?>);">
+						<section id="<?php echo $sectionMeta['_rawhide_metabox_html_id'][0]; ?>" class="<?php echo $sectionMeta['_rawhide_metabox_css_class'][0]; ?>" style="background-image:url(<?php echo  $sectionMeta['_rawhide_metabox_bg_image'][0]; ?>);">
 							<div class="bg-shell" style="background-image:url(<?php echo  $sectionMeta['_rawhide_metabox_bg_image'][0]; ?>);"></div>
 							<div class="section-content">
 								<h2><?php echo $section->post_title; ?></h2>

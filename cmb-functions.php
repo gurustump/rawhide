@@ -87,6 +87,13 @@ function rawhide_register_metaboxes() {
 	) );
 
 	$cmb_metabox->add_field( array(
+		'name'       => __( 'HTML ID', 'cmb2' ),
+		'desc'       => __( 'The id that will be added to the container for this module', 'cmb2' ),
+		'id'         => $prefix . 'html_id',
+		'type'       => 'text',
+	) );
+
+	$cmb_metabox->add_field( array(
 		'name'       => __( 'CSS Class', 'cmb2' ),
 		'desc'       => __( 'The CSS class that will be added to the container for this module', 'cmb2' ),
 		'id'         => $prefix . 'css_class',

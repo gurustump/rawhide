@@ -110,6 +110,7 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 	var win = $(window);
+	var scrolling = false;
 
     if (typeof isHomePage === "undefined") { isHomePage = $('body').hasClass('home') };
     /*
@@ -117,6 +118,19 @@ jQuery(document).ready(function($) {
     * You can remove this if you don't need it
     */
     loadGravatars();
+	
+	$('.TRIGGER_NAV_OV').click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$('body').toggleClass('lock');
+		var ov = $('.NAV_OV');
+		ov.toggleClass('open');
+	});
+	$('.NAV_OV a').click(function(e) {
+		e.preventDefault();
+		scrollToSection($($(this).attr('href')));
+		$('.TRIGGER_NAV_OV').click();
+	});
 	
 	win.resize(function () {
 		waitForFinalEvent( function() {
@@ -127,7 +141,7 @@ jQuery(document).ready(function($) {
     win.scroll(function() {
         if (isHomePage) { 
 			homePageScrollBehavior();
-			if (mobileDeviceType() != 'mobile' && mobileDeviceType() != 'tablet') {
+			if (mobileDeviceType() != 'mobile' && mobileDeviceType() != 'tablet' && !scrolling) {
 				waitForFinalEvent( function() {
 					// auto scroll to next or previious section if user starts to scroll there
 					var activeSection = getActiveSection();
@@ -201,7 +215,10 @@ jQuery(document).ready(function($) {
 
 	// scrolls window to section
 	function scrollToSection(section) {
-		$('html,body').stop().animate({scrollTop: win.scrollTop() + eTop(section)});
+		scrolling = true;
+		$('html,body').stop().animate({scrollTop: win.scrollTop() + eTop(section)}, 300, function() {
+			scrolling = false;
+		});
 	}
 
 	// hides or shows the site title, depending on which section is visible, and how far from being even with the top of the page it is

@@ -9,6 +9,27 @@ on larger screens.
 
 ******************************************************************/
 
+.trigger-nav-ov {
+	top:70px;
+	.ic {
+		& > span {
+			@include border-radius(5px);
+			height:10px;
+			margin-bottom:10px;
+			width:60px;
+		}
+	}
+	&.active {
+		.ic {
+			height:56px;
+			& > span {
+				&.bar-3 {
+					@include transform(rotate(-90deg) translateX(33px));
+				}
+			}
+		}
+	}
+}
 
 body.home {
 	#logo, #main > section.hide-sitename h2 {

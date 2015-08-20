@@ -344,6 +344,10 @@ NAVIGATION STYLES
 }
 
 /* end .nav */
+.nav-ov nav > ul > li > a {
+  font-size: 28px;
+}
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
@@ -455,6 +459,28 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
+.trigger-nav-ov {
+  left: 50px;
+  top: 50px;
+}
+.trigger-nav-ov .ic > span {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  height: 8px;
+  margin-bottom: 8px;
+  width: 50px;
+}
+.trigger-nav-ov.active .ic > span.bar-3 {
+  -webkit-transform: rotate(-90deg) translateX(25px);
+  -moz-transform: rotate(-90deg) translateX(25px);
+  -ms-transform: rotate(-90deg) translateX(25px);
+  -o-transform: rotate(-90deg) translateX(25px);
+  transform: rotate(-90deg) translateX(25px);
+}
+
 body.home #logo, body.home #main > section.hide-sitename h2 {
   font-size: 60px;
   line-height: 60px;

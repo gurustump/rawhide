@@ -13,6 +13,28 @@ be seen on the Desktop.
 	
 }
 
+.trigger-nav-ov {
+	left:50px;
+	top:50px;
+	.ic {
+		& > span {
+			@include border-radius(5px);
+			height:8px;
+			margin-bottom:8px;
+			width:50px;
+		}
+	}
+	&.active {
+		.ic {
+			& > span {
+				&.bar-3 {
+					@include transform(rotate(-90deg) translateX(25px));
+				}
+			}
+		}
+	}
+}
+
 body.home {
 	#logo, #main > section.hide-sitename h2 {
 		font-size:60px;

@@ -1387,6 +1387,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body.lock {
+  overflow: hidden;
+}
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1559,6 +1562,212 @@ and more scalable.
 }
 
 /* end .nav */
+.trigger-nav-ov {
+  color: white !important;
+  text-decoration: none;
+  font-family: "ironbrine", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  position: fixed;
+  left: 20px;
+  top: 25px;
+  font-size: 17px;
+  z-index: 9998;
+  outline: none !important;
+  -webkit-transition: top 0.275ms;
+  -moz-transition: top 0.275ms;
+  -ms-transition: top 0.275ms;
+  -o-transition: top 0.275ms;
+  transition: top 0.275ms;
+}
+.trigger-nav-ov > span {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+}
+body.scrolled .trigger-nav-ov {
+  top: 10px;
+}
+.trigger-nav-ov .ic {
+  margin-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 5px;
+  -webkit-transition: all 275ms;
+  -moz-transition: all 275ms;
+  -ms-transition: all 275ms;
+  -o-transition: all 275ms;
+  transition: all 275ms;
+}
+.trigger-nav-ov .ic > span {
+  background: #373731;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+  display: block;
+  height: 3px;
+  margin-bottom: 3px;
+  -webkit-transition: all 275ms;
+  -moz-transition: all 275ms;
+  -ms-transition: all 275ms;
+  -o-transition: all 275ms;
+  transition: all 275ms;
+  width: 22px;
+}
+.trigger-nav-ov.active .ic {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.trigger-nav-ov.active .ic > span.bar-1 {
+  -webkit-transform: translateY(6px);
+  -moz-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+  transform: translateY(6px);
+}
+.trigger-nav-ov.active .ic > span.bar-2 {
+  opacity: 0;
+}
+.trigger-nav-ov.active .ic > span.bar-3 {
+  -webkit-transform: rotate(-90deg) translateX(5px);
+  -moz-transform: rotate(-90deg) translateX(5px);
+  -ms-transform: rotate(-90deg) translateX(5px);
+  -o-transform: rotate(-90deg) translateX(5px);
+  transform: rotate(-90deg) translateX(5px);
+}
+.trigger-nav-ov.active .title {
+  opacity: 0;
+}
+
+.nav-ov {
+  position: fixed;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  vertical-align: middle;
+  font-size: 18px;
+  font-family: "ironbrine", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.nav-ov.open {
+  z-index: 9997;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  padding-top: 75px;
+}
+.nav-ov a:hover {
+  text-decoration: none !important;
+}
+.nav-ov nav {
+  height: 100%;
+}
+.nav-ov nav .dummy > a {
+  display: none;
+  height: 0 !important;
+}
+.nav-ov nav .dummy > .sub-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.nav-ov nav a {
+  text-decoration: none;
+  padding: 0 30px !important;
+  overflow: hidden;
+}
+.nav-ov nav > ul {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+}
+.nav-ov nav > ul > li {
+  float: none;
+  height: 20%;
+}
+.nav-ov nav > ul > li:first-child {
+  /* height:40%; */
+}
+.nav-ov nav > ul > li:first-child > a {
+  /* height:50%; */
+}
+.nav-ov nav > ul > li > a {
+  height: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  /* height:100%; 
+  line-height:100%; */
+  position: relative;
+}
+.nav-ov nav > ul > li > a:hover {
+  color: white;
+}
+.nav-ov nav > ul > li > a > span {
+  display: block;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+}
+.nav-ov nav > ul > li > a > span > span {
+  font-size: 10px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  font-weight: 300;
+}
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -2451,6 +2660,10 @@ you can add resource intensive styles.
   }
 
   /* end .nav */
+  .nav-ov nav > ul > li > a {
+    font-size: 28px;
+  }
+
   /*********************
   SIDEBARS & ASIDES
   *********************/
@@ -2563,6 +2776,31 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
+  .trigger-nav-ov {
+    left: 40px;
+    top: 15px;
+  }
+  .trigger-nav-ov .ic {
+    height: 46px;
+  }
+  .trigger-nav-ov .ic > span {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    height: 6px;
+    margin-bottom: 6px;
+    width: 40px;
+  }
+  .trigger-nav-ov.active .ic > span.bar-3 {
+    -webkit-transform: rotate(-90deg) translateX(17px);
+    -moz-transform: rotate(-90deg) translateX(17px);
+    -ms-transform: rotate(-90deg) translateX(17px);
+    -o-transform: rotate(-90deg) translateX(17px);
+    transform: rotate(-90deg) translateX(17px);
+  }
+
   body.home #main > section {
     height: 100%;
   }
@@ -2648,6 +2886,28 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
+  .trigger-nav-ov {
+    left: 50px;
+    top: 50px;
+  }
+  .trigger-nav-ov .ic > span {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    height: 8px;
+    margin-bottom: 8px;
+    width: 50px;
+  }
+  .trigger-nav-ov.active .ic > span.bar-3 {
+    -webkit-transform: rotate(-90deg) translateX(25px);
+    -moz-transform: rotate(-90deg) translateX(25px);
+    -ms-transform: rotate(-90deg) translateX(25px);
+    -o-transform: rotate(-90deg) translateX(25px);
+    transform: rotate(-90deg) translateX(25px);
+  }
+
   body.home #logo, body.home #main > section.hide-sitename h2 {
     font-size: 60px;
     line-height: 60px;
@@ -2759,6 +3019,10 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
+  .trigger-nav-ov {
+    left: 100px;
+  }
+
   body.home #main > section.studio .section-content {
     right: 12%;
   }
@@ -2788,6 +3052,30 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
+  .trigger-nav-ov {
+    top: 70px;
+  }
+  .trigger-nav-ov .ic > span {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    height: 10px;
+    margin-bottom: 10px;
+    width: 60px;
+  }
+  .trigger-nav-ov.active .ic {
+    height: 56px;
+  }
+  .trigger-nav-ov.active .ic > span.bar-3 {
+    -webkit-transform: rotate(-90deg) translateX(33px);
+    -moz-transform: rotate(-90deg) translateX(33px);
+    -ms-transform: rotate(-90deg) translateX(33px);
+    -o-transform: rotate(-90deg) translateX(33px);
+    transform: rotate(-90deg) translateX(33px);
+  }
+
   body.home #logo, body.home #main > section.hide-sitename h2 {
     font-size: 80px;
     line-height: 80px;
@@ -2858,6 +3146,14 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
+  .trigger-nav-ov {
+    left: 120px;
+  }
+
+  .nav-ov nav > ul > li > a {
+    font-size: 36px;
+  }
+
   body.home #logo, body.home #main > section.hide-sitename h2 {
     font-size: 80px;
     line-height: 80px;
