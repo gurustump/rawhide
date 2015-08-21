@@ -111,6 +111,7 @@ function loadGravatars() {
 jQuery(document).ready(function($) {
 	var win = $(window);
 	var scrolling = false;
+	var initialScroll = true;
 
     if (typeof isHomePage === "undefined") { isHomePage = $('body').hasClass('home') };
     /*
@@ -138,15 +139,28 @@ jQuery(document).ready(function($) {
 			mobileDeviceBodyClass();
 		}, timeToWaitForLast, 'resizeWindow');
 	});
-    win.scroll(function() {
+    win.scroll(function(e) {
         if (isHomePage) { 
 			homePageScrollBehavior();
+			var homeWaitForFinalDelay = 50;
+			
+			// this gets the section that was active when scrolling began
+			if (initialScroll == true) {
+				origActiveSection = getActiveSection();
+				initialScroll = false;
+			}
+			waitForFinalEvent( function() {
+				initialScroll = true;
+			}, homeWaitForFinalDelay + 1, 'endScrollWindow');
+			
 			if (mobileDeviceType() != 'mobile' && mobileDeviceType() != 'tablet' && !scrolling) {
 				waitForFinalEvent( function() {
 					// auto scroll to next or previious section if user starts to scroll there
 					var activeSection = getActiveSection();
-					var activePosPct = sectionPositionPct(activeSection);
-					if (activePosPct < 0) {
+					var activePosPct = sectionPositionPct(origActiveSection);
+					if (activePosPct > .5 || activePosPct < -.5) {
+						scrollToSection(activeSection);
+					} else if (activePosPct < 0) {
 						if (activePosPct > -.05) {
 							scrollToSection(activeSection);
 						} else {
@@ -159,7 +173,7 @@ jQuery(document).ready(function($) {
 							scrollToSection(getNextSection());
 						}
 					}
-				}, 50, 'scrollWindow');
+				}, homeWaitForFinalDelay, 'scrollWindow');
 			}
 		}
     });
@@ -216,7 +230,7 @@ jQuery(document).ready(function($) {
 	// scrolls window to section
 	function scrollToSection(section) {
 		scrolling = true;
-		$('html,body').stop().animate({scrollTop: win.scrollTop() + eTop(section)}, 300, function() {
+		$('html,body').stop().animate({scrollTop: win.scrollTop() + eTop(section)}, 400, function() {
 			scrolling = false;
 		});
 	}
