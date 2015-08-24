@@ -11,9 +11,38 @@ on larger screens.
 
 .trigger-nav-ov {
 	left:100px;
+	.ic {
+		& > span {
+			@include border-radius(5px);
+			height:8px;
+			margin-bottom:8px;
+			width:50px;
+		}
+	}
+	&.active {
+		.ic {
+			& > span {
+				&.bar-3 {
+					@include transform(rotate(-90deg) translateX(25px));
+				}
+			}
+		}
+	}
+}
+.nav-ov nav > ul > li > a {
+    font-size:36px;
 }
 
 body.home {
+	#logo, #main > section.hide-sitename h2 {
+		font-size:60px;
+		line-height:60px;
+		padding-top:28px;
+		.sub {
+			font-size:14px;
+			line-height:14px;
+		}
+	}
 	#main {
 		& > section {
 			&.studio {

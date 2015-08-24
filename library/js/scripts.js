@@ -153,7 +153,7 @@ jQuery(document).ready(function($) {
 				initialScroll = true;
 			}, homeWaitForFinalDelay + 1, 'endScrollWindow');
 			
-			if (mobileDeviceType() != 'mobile' && mobileDeviceType() != 'tablet' && !scrolling) {
+			if (!scrolling) {
 				waitForFinalEvent( function() {
 					// auto scroll to next or previious section if user starts to scroll there
 					var activeSection = getActiveSection();

@@ -13,7 +13,7 @@ on larger screens.
 	left:120px;
 }
 .nav-ov nav > ul > li > a {
-    font-size:36px;
+    font-size:48px;
 }
 
 body.home {
@@ -51,6 +51,9 @@ body.home {
 					& > figure {
 						width:auto;
 					}
+				}
+				.section-content {
+					padding-top:90px;
 				}
 			}
 		}

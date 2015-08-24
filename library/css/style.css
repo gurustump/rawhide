@@ -2265,7 +2265,7 @@ body.home #logo, body.home #main > section.hide-sitename h2 {
   text-align: center;
   font-size: 35px;
   line-height: 35px;
-  letter-spacing: 2px;
+  letter-spacing: -1px;
   margin: 0;
   opacity: 0;
   color: #dbdbce;
@@ -2273,7 +2273,8 @@ body.home #logo, body.home #main > section.hide-sitename h2 {
 body.home #logo > a, body.home #main > section.hide-sitename h2 > a {
   color: #dbdbce;
   position: relative;
-  top: 8px;
+  top: 20px;
+  left: 3px;
 }
 body.home #logo.light, body.home #logo.light > a, body.home #main > section.hide-sitename h2.light, body.home #main > section.hide-sitename h2.light > a {
   color: black;
@@ -2288,14 +2289,14 @@ body.home #logo .sub, body.home #main > section.hide-sitename h2 .sub {
   font-family: "ironbrine", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #986c2c;
   font-size: 9px;
-  line-height: 14px;
+  line-height: 12px;
   letter-spacing: 4px;
   display: block;
 }
 body.home #main > section.hide-sitename h2 {
   opacity: 1;
   position: absolute;
-  top: 10px;
+  top: 22px;
 }
 body.home #main > section.hide-sitename.light h2 {
   color: black;
@@ -2348,10 +2349,10 @@ body.home #main > section.rentals .subsection {
   padding: 300px 20px 0;
 }
 body.home #main > section.rentals .subsection.phaseone {
-  background: url(../images/bg-images/camera-phaseone.jpg) no-repeat 50% 15px/90%;
+  background: url(../images/bg-images/camera-phaseone.jpg) no-repeat 50% 43px/73%;
 }
 body.home #main > section.rentals .subsection.canon {
-  background: url(../images/bg-images/camera-canon.jpg) no-repeat 65% 15px/115%;
+  background: url(../images/bg-images/camera-canon.jpg) no-repeat -12px 32px/100%;
 }
 body.home #main > section.clients .bg-shell {
   background-repeat: repeat;
@@ -2396,35 +2397,11 @@ body.home #main > section.contact {
 body.home #main > section.contact .bg-shell {
   background-size: cover;
 }
+body.home #main > section.contact .section-content {
+  padding-top: 110px;
+}
 body.home #main > section.contact .contact-items {
   font-size: 18px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: relative;
-  top: 50%;
   display: inline-block;
   text-align: left;
   margin: 0;
@@ -2741,10 +2718,14 @@ you can add resource intensive styles.
     padding: 310px 35px 0;
   }
   body.home #main > section.rentals .subsection.phaseone {
-    background-size: 50%;
+    padding: 150px 35px 160px 410px;
+    background-size: 45%;
+    background-position: 5% 50%;
   }
   body.home #main > section.rentals .subsection.canon {
-    background-size: 75%;
+    padding: 150px 35px 160px 80px;
+    background-size: 65%;
+    background-position: 100% 50%;
   }
   body.home #main > section.clients .gallery {
     width: 540px;
@@ -2759,7 +2740,7 @@ you can add resource intensive styles.
     /*padding-left:30px;*/
   }
   body.home #logo, body.home #main > section.hide-sitename h2 {
-    padding-top: 11px;
+    padding-top: 5px;
   }
   body.home #logo .primary > span, body.home #main > section.hide-sitename h2 .primary > span {
     display: inline;
@@ -2778,7 +2759,7 @@ you can add resource intensive styles.
   ******************************************************************/
   .trigger-nav-ov {
     left: 40px;
-    top: 15px;
+    top: 28px;
   }
   .trigger-nav-ov .ic {
     height: 46px;
@@ -2838,7 +2819,7 @@ you can add resource intensive styles.
   }
   body.home #main > section.rentals .subsection {
     background: none !important;
-    padding: 0;
+    padding: 0 !important;
     position: absolute;
   }
   body.home #main > section.rentals .subsection.phaseone {
@@ -2858,7 +2839,37 @@ you can add resource intensive styles.
   body.home #main > section.rentals h3 .price {
     font-size: 15px;
   }
+  body.home #main > section.clients .section-content {
+    padding-top: 20px;
+  }
   body.home #main > section.clients .gallery {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
     width: 900px;
   }
   body.home #main > section.clients .gallery > figure {
@@ -2867,6 +2878,14 @@ you can add resource intensive styles.
   body.home #main > section > * {
     position: relative;
     z-index: 1;
+  }
+  body.home #logo, body.home #main > section.hide-sitename h2 {
+    padding-top: 10px;
+    font-size: 45px;
+  }
+  body.home #logo .sub, body.home #main > section.hide-sitename h2 .sub {
+    font-size: 11px;
+    line-height: 15px;
   }
 }
 /*********************
@@ -2891,32 +2910,32 @@ you can add resource intensive styles.
     top: 50px;
   }
   .trigger-nav-ov .ic > span {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    height: 8px;
-    margin-bottom: 8px;
-    width: 50px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    height: 7px;
+    margin-bottom: 7px;
+    width: 45px;
   }
   .trigger-nav-ov.active .ic > span.bar-3 {
-    -webkit-transform: rotate(-90deg) translateX(25px);
-    -moz-transform: rotate(-90deg) translateX(25px);
-    -ms-transform: rotate(-90deg) translateX(25px);
-    -o-transform: rotate(-90deg) translateX(25px);
-    transform: rotate(-90deg) translateX(25px);
+    -webkit-transform: rotate(-90deg) translateX(22px);
+    -moz-transform: rotate(-90deg) translateX(22px);
+    -ms-transform: rotate(-90deg) translateX(22px);
+    -o-transform: rotate(-90deg) translateX(22px);
+    transform: rotate(-90deg) translateX(22px);
   }
 
   body.home #logo, body.home #main > section.hide-sitename h2 {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 50px;
+    line-height: 50px;
     letter-spacing: 3px;
-    padding-top: 40px;
+    padding-top: 32px;
   }
   body.home #logo .sub, body.home #main > section.hide-sitename h2 .sub {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 12px;
     letter-spacing: 7px;
   }
   body.home #main > section {
@@ -2978,26 +2997,29 @@ you can add resource intensive styles.
     font-size: 36px;
   }
   body.home #main > section.clients .section-content {
-    padding-top: 110px;
+    padding-top: 50px;
+  }
+  body.home #main > section.contact .section-content {
+    padding-top: 165px;
   }
   body.home #main > section.contact .contact-items {
-    font-size: 30px;
+    font-size: 28px;
   }
   body.home #main > section.contact .contact-items > li > * {
-    padding-left: 120px;
+    padding-left: 70px;
     display: block;
   }
   body.home #main > section.contact .contact-items > li.location > * {
-    background: url(../images/ic-location.png) no-repeat 10px 50%/auto;
+    background: url(../images/ic-location.png) no-repeat 10px 50%/auto 40px;
   }
   body.home #main > section.contact .contact-items > li.email > * {
-    background: url(../images/ic-email.png) no-repeat 0 50%/auto;
+    background: url(../images/ic-email.png) no-repeat 0 50%/40px auto;
   }
   body.home #main > section.contact .contact-items > li.telephone > * {
-    background: url(../images/ic-phone.png) no-repeat 10px 50%/auto;
+    background: url(../images/ic-phone.png) no-repeat 10px 50%/auto 40px;
   }
   body.home #main > section.contact .contact-items > li.ratesheet > * {
-    background: url(../images/ic-pdf.png) no-repeat 0 25%/auto;
+    background: url(../images/ic-pdf.png) no-repeat 0 25%/40px auto;
   }
   body.home #main > section > * {
     position: relative;
@@ -3022,7 +3044,37 @@ This is for the larger monitors and possibly full screen viewers.
   .trigger-nav-ov {
     left: 100px;
   }
+  .trigger-nav-ov .ic > span {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    height: 8px;
+    margin-bottom: 8px;
+    width: 50px;
+  }
+  .trigger-nav-ov.active .ic > span.bar-3 {
+    -webkit-transform: rotate(-90deg) translateX(25px);
+    -moz-transform: rotate(-90deg) translateX(25px);
+    -ms-transform: rotate(-90deg) translateX(25px);
+    -o-transform: rotate(-90deg) translateX(25px);
+    transform: rotate(-90deg) translateX(25px);
+  }
 
+  .nav-ov nav > ul > li > a {
+    font-size: 36px;
+  }
+
+  body.home #logo, body.home #main > section.hide-sitename h2 {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 28px;
+  }
+  body.home #logo .sub, body.home #main > section.hide-sitename h2 .sub {
+    font-size: 14px;
+    line-height: 14px;
+  }
   body.home #main > section.studio .section-content {
     right: 12%;
   }
@@ -3074,6 +3126,10 @@ This is for the larger monitors and possibly full screen viewers.
     -ms-transform: rotate(-90deg) translateX(33px);
     -o-transform: rotate(-90deg) translateX(33px);
     transform: rotate(-90deg) translateX(33px);
+  }
+
+  .nav-ov nav > ul > li > a {
+    font-size: 40px;
   }
 
   body.home #logo, body.home #main > section.hide-sitename h2 {
@@ -3131,8 +3187,16 @@ This is for the larger monitors and possibly full screen viewers.
   body.home #main > section.rentals h3 .price {
     font-size: 24px;
   }
-  body.home #main > section.clients .section-content {
-    padding-top: 170px;
+  body.home #main > section.contact .section-content {
+    padding-top: 225px;
+  }
+  body.home #main > section.contact .contact-items {
+    font-size: 30px;
+  }
+  body.home #main > section.contact .contact-items > li > * {
+    padding-left: 120px;
+    display: block;
+    background-size: auto !important;
   }
 }
 @media only screen and (min-width: 1640px) {
@@ -3151,7 +3215,7 @@ This is for the larger monitors and possibly full screen viewers.
   }
 
   .nav-ov nav > ul > li > a {
-    font-size: 36px;
+    font-size: 48px;
   }
 
   body.home #logo, body.home #main > section.hide-sitename h2 {
@@ -3181,6 +3245,9 @@ This is for the larger monitors and possibly full screen viewers.
   }
   body.home #main > section.clients .gallery > figure {
     width: auto;
+  }
+  body.home #main > section.clients .section-content {
+    padding-top: 90px;
   }
 }
 /*********************

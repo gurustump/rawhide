@@ -30,6 +30,9 @@ on larger screens.
 		}
 	}
 }
+.nav-ov nav > ul > li > a {
+    font-size:40px;
+}
 
 body.home {
 	#logo, #main > section.hide-sitename h2 {
@@ -95,9 +98,19 @@ body.home {
 					}
 				}
 			}
-			&.clients {
+			&.contact {
 				.section-content {
-					padding-top:170px;
+					padding-top:225px;
+				}
+				.contact-items {
+					font-size:30px;
+					& > li {
+						& > * {
+							padding-left:120px;
+							display:block;
+							background-size:auto !important;
+						}
+					}
 				}
 			}
 		}

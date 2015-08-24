@@ -1125,14 +1125,15 @@ body.home {
 		text-align:center;
 		font-size:35px;
 		line-height:35px;
-		letter-spacing:2px;
+		letter-spacing:-1px;
 		margin:0;
 		opacity:0;
 		color:$off-white;
 		& > a {
 			color:$off-white;
 			position:relative;
-			top:8px;
+			top:20px;
+			left:3px;
 		}
 		&.light, &.light > a {
 			color:$black;
@@ -1149,7 +1150,7 @@ body.home {
 			font-family:$iron;
 			color:$orange;
 			font-size:9px;
-			line-height:14px;
+			line-height:12px;
 			letter-spacing:4px;
 			display:block;
 		}
@@ -1158,7 +1159,7 @@ body.home {
 		h2 {
 			opacity:1;
 			position:absolute;
-			top:10px
+			top:22px
 		}
 		&.light {
 			h2 {
@@ -1218,10 +1219,10 @@ body.home {
 				.subsection {
 					padding:300px 20px 0;
 					&.phaseone {
-						background:url(../images/bg-images/camera-phaseone.jpg) no-repeat 50% 15px / 90%;
+						background:url(../images/bg-images/camera-phaseone.jpg) no-repeat 50% 43px / 73%;
 					}
 					&.canon {
-						background:url(../images/bg-images/camera-canon.jpg) no-repeat 65% 15px / 115%;
+						background:url(../images/bg-images/camera-canon.jpg) no-repeat -12px 32px / 100%;
 					}
 				}
 			}
@@ -1267,9 +1268,11 @@ body.home {
 				}
 				height:100%;
 				text-align:center;
+				.section-content {
+					padding-top:110px;
+				}
 				.contact-items {
 					font-size:18px;
-					@include v-center;
 					display:inline-block;
 					text-align:left;
 					margin:0;

@@ -18,17 +18,17 @@ be seen on the Desktop.
 	top:50px;
 	.ic {
 		& > span {
-			@include border-radius(5px);
-			height:8px;
-			margin-bottom:8px;
-			width:50px;
+			@include border-radius(4px);
+			height:7px;
+			margin-bottom:7px;
+			width:45px;
 		}
 	}
 	&.active {
 		.ic {
 			& > span {
 				&.bar-3 {
-					@include transform(rotate(-90deg) translateX(25px));
+					@include transform(rotate(-90deg) translateX(22px));
 				}
 			}
 		}
@@ -37,13 +37,13 @@ be seen on the Desktop.
 
 body.home {
 	#logo, #main > section.hide-sitename h2 {
-		font-size:60px;
-		line-height:60px;
+		font-size:50px;
+		line-height:50px;
 		letter-spacing:3px;
-		padding-top:40px;
+		padding-top:32px;
 		.sub {
-			font-size:14px;
-			line-height:14px;
+			font-size:12px;
+			line-height:12px;
 			letter-spacing:7px;
 		}
 	}
@@ -115,28 +115,31 @@ body.home {
 			}
 			&.clients {
 				.section-content {
-					padding-top:110px;
+					padding-top:50px;
 				}
 			}
 			&.contact {
+				.section-content {
+					padding-top:165px;
+				}
 				.contact-items {
-					font-size:30px;
+					font-size:28px;
 					& > li {
 						& > * {
-							padding-left:120px;
+							padding-left:70px;
 							display:block;
 						}
 						&.location > *{
-							background:url(../images/ic-location.png) no-repeat 10px 50% / auto;
+							background:url(../images/ic-location.png) no-repeat 10px 50% / auto 40px;
 						}
 						&.email > * {
-							background:url(../images/ic-email.png) no-repeat 0 50% / auto;
+							background:url(../images/ic-email.png) no-repeat 0 50% / 40px auto;
 						}
 						&.telephone > * {
-							background:url(../images/ic-phone.png) no-repeat 10px 50% / auto;
+							background:url(../images/ic-phone.png) no-repeat 10px 50% / auto 40px;
 						}
 						&.ratesheet > * {
-							background:url(../images/ic-pdf.png) no-repeat 0 25% / auto;
+							background:url(../images/ic-pdf.png) no-repeat 0 25% / 40px auto;
 						}
 					}
 				}
