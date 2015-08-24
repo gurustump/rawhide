@@ -2289,7 +2289,7 @@ body.home #logo .sub, body.home #main > section.hide-sitename h2 .sub {
   font-family: "ironbrine", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #986c2c;
   font-size: 9px;
-  line-height: 12px;
+  line-height: 8px;
   letter-spacing: 4px;
   display: block;
 }
