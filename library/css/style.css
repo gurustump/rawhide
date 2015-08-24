@@ -3250,6 +3250,19 @@ This is for the larger monitors and possibly full screen viewers.
     padding-top: 90px;
   }
 }
+/* retina screens */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1280px), only screen and (min--moz-device-pixel-ratio: 1.5) and (min-width: 1280px), only screen and (min-device-pixel-ratio: 1.5) and (min-width: 1280px) {
+  /******************************************************************
+  Site Name: 
+  Author: 
+  
+  Stylesheet: Super Large Monitor Stylesheet
+  
+  You can add some advanced styles here if you like. This kicks in
+  on larger screens.
+  
+  ******************************************************************/
+}
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
