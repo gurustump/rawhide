@@ -403,6 +403,7 @@ mobile. Make sure to double check these!
 /* end .footer-links */
 body.home #main > section {
   height: 100%;
+  min-height: 1000px;
 }
 body.home #main > section .bg-shell {
   height: 560px;
@@ -498,6 +499,7 @@ body.home #logo .sub, body.home #main > section.hide-sitename h2 .sub {
 }
 body.home #main > section {
   font-size: 15px;
+  min-height: 750px;
 }
 body.home #main > section h2 {
   font-size: 36px;
@@ -530,7 +532,7 @@ body.home #main > section.studio h2 {
 }
 body.home #main > section.studio .section-content {
   right: 9%;
-  top: 22%;
+  top: 28%;
 }
 body.home #main > section.location .bg-shell {
   background-position: 50% 50%;

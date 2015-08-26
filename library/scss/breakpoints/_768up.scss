@@ -293,6 +293,7 @@ body.home {
 	#main {
 		& > section {
 			height:100%;
+			min-height:1000px;
 			.bg-shell {
 				height:560px;
 			}

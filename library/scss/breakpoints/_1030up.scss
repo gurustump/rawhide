@@ -50,6 +50,7 @@ body.home {
 	#main {
 		& > section {
 			font-size:15px;
+			min-height:750px;
 			h2 {
 				font-size:36px;
 				padding-bottom:30px;
@@ -82,7 +83,7 @@ body.home {
 				}
 				.section-content {
 					right:9%;
-					top:22%;
+					top:28%;
 				}
 			}
 			&.location {

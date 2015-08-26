@@ -11,9 +11,14 @@ on larger screens.
 
 body.home {
 	#main {
+		background:orange;
 		& > section {
 			&.studio {
 				.bg-shell {
+					background-image:url(../images/bg-images/bg-studio-package-5120.jpg) !important;
+				}
+				.section-content {
+					top:33%;
 				}
 			}
 		}
