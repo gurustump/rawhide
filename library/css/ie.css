@@ -423,17 +423,32 @@ body.home #main > section.rentals .section-content {
   padding-top: 68px;
 }
 body.home #main > section.rentals .subsection {
-  padding: 310px 35px 0;
+  position: relative;
+  height: 400px;
+  padding: 0;
+}
+body.home #main > section.rentals .subsection .sub-content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 body.home #main > section.rentals .subsection.phaseone {
-  padding: 150px 35px 160px 410px;
   background-size: 45%;
   background-position: 5% 50%;
 }
+body.home #main > section.rentals .subsection.phaseone .sub-content {
+  right: 5%;
+}
 body.home #main > section.rentals .subsection.canon {
-  padding: 150px 35px 160px 80px;
   background-size: 65%;
   background-position: 100% 50%;
+}
+body.home #main > section.rentals .subsection.canon .sub-content {
+  left: 12%;
 }
 body.home #main > section.clients .gallery {
   width: 540px;
@@ -546,12 +561,19 @@ body.home #main > section.location .section-content {
   top: 22%;
 }
 body.home #main > section.rentals .subsection.phaseone {
-  top: 27%;
+  background-position: 20% 100%;
+  background-size: 32%;
+}
+body.home #main > section.rentals .subsection.phaseone .sub-content {
+  top: 65%;
   right: 15%;
 }
 body.home #main > section.rentals .subsection.canon {
-  bottom: 6%;
-  left: 20%;
+  background-size: 45%;
+  background-position: 78% 50%;
+}
+body.home #main > section.rentals .subsection.canon .sub-content {
+  left: 25%;
 }
 body.home #main > section.rentals h3 {
   font-size: 36px;

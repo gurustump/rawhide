@@ -102,12 +102,19 @@ body.home {
 			&.rentals {
 				.subsection {
 					&.phaseone {
-						top:27%;
-						right:15%;
+						background-position:20% 100%;
+						background-size:32%;
+						.sub-content {
+							top:65%;
+							right:15%;
+						}
 					}
 					&.canon {
-						bottom:6%;
-						left:20%;
+						background-size:45%;
+						background-position:78% 50%;
+						.sub-content {
+							left:25%;
+						}
 					}
 				}
 				h3 {

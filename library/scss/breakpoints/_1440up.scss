@@ -86,10 +86,21 @@ body.home {
 				}
 				.subsection {
 					&.phaseone {
-						right:18%;
+						height:55%;
+						background-position:28% 100%;
+						background-size:27%;
+						.sub-content {
+							top:71%;
+							right:20%;
+						}
 					}
 					&.canon {
-						left:22%;
+						height:45%;
+						background-size:35%;
+						background-position:70% 50%;
+						.sub-content {
+							left:28%;
+						}
 					}
 				}
 				h3 {
