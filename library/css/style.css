@@ -2614,6 +2614,10 @@ you can add resource intensive styles.
   }
 
   /* end .nav */
+  .trigger-nav-ov {
+    top: 30px;
+  }
+
   .nav-ov nav > ul > li > a {
     font-size: 28px;
   }
@@ -2888,7 +2892,7 @@ you can add resource intensive styles.
   ******************************************************************/
   .trigger-nav-ov {
     left: 50px;
-    top: 50px;
+    top: 51px;
   }
   .trigger-nav-ov .ic > span {
     -webkit-border-radius: 4px;
@@ -3082,7 +3086,7 @@ This is for the larger monitors and possibly full screen viewers.
   
   ******************************************************************/
   .trigger-nav-ov {
-    top: 70px;
+    top: 80px;
   }
   .trigger-nav-ov .ic > span {
     -webkit-border-radius: 5px;
