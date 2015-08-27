@@ -78,12 +78,12 @@ body.home {
 					padding:0;
 				}
 				.subsection {
-					height:50%;
+					top:10%;
+					height:45%;
 					&.phaseone {
-						background-position:10% 90%;
+						background-position:10% 50%;
 						background-size:38%;
 						.sub-content {
-							top:65%;
 							right:15%;
 						}
 					}

@@ -2316,9 +2316,6 @@ body.home #main > section.hide-sitename .section-content {
   height: 100%;
   position: relative;
 }
-body.home #main > section.rentals {
-  padding-bottom: 20px;
-}
 body.home #main > section.rentals .bg-shell {
   display: none;
 }
@@ -2329,7 +2326,7 @@ body.home #main > section.rentals .subsection {
   padding: 300px 20px 0;
 }
 body.home #main > section.rentals .subsection.phaseone {
-  background: url(../images/bg-images/camera-phaseone-1200.jpg) no-repeat 50% 43px/73%;
+  background: url(../images/bg-images/camera-phaseone-1200.jpg) no-repeat 50% 81px/73%;
 }
 body.home #main > section.rentals .subsection.canon {
   background: url(../images/bg-images/camera-canon.jpg) no-repeat -12px 32px/100%;
@@ -2817,14 +2814,14 @@ you can add resource intensive styles.
     padding: 0;
   }
   body.home #main > section.rentals .subsection {
-    height: 50%;
+    top: 10%;
+    height: 45%;
   }
   body.home #main > section.rentals .subsection.phaseone {
-    background-position: 10% 90%;
+    background-position: 10% 50%;
     background-size: 38%;
   }
   body.home #main > section.rentals .subsection.phaseone .sub-content {
-    top: 65%;
     right: 15%;
   }
   body.home #main > section.rentals .subsection.canon {
@@ -2971,12 +2968,8 @@ you can add resource intensive styles.
     top: 22%;
   }
   body.home #main > section.rentals .subsection.phaseone {
-    background-position: 20% 100%;
+    background-position: 20% 50%;
     background-size: 32%;
-  }
-  body.home #main > section.rentals .subsection.phaseone .sub-content {
-    top: 65%;
-    right: 15%;
   }
   body.home #main > section.rentals .subsection.canon {
     background-size: 45%;
@@ -3160,17 +3153,18 @@ This is for the larger monitors and possibly full screen viewers.
   body.home #main > section.rentals .bg-shell {
     background-size: contain;
   }
+  body.home #main > section.rentals .subsection {
+    height: 40%;
+    top: 20%;
+  }
   body.home #main > section.rentals .subsection.phaseone {
-    height: 55%;
-    background-position: 28% 100%;
+    background-position: 25% 50%;
     background-size: 27%;
   }
   body.home #main > section.rentals .subsection.phaseone .sub-content {
-    top: 71%;
-    right: 20%;
+    right: 17%;
   }
   body.home #main > section.rentals .subsection.canon {
-    height: 45%;
     background-size: 35%;
     background-position: 70% 50%;
   }
@@ -3223,6 +3217,9 @@ This is for the larger monitors and possibly full screen viewers.
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 10px;
+  }
+  body.home #main > section.rentals .subsection.phaseone .sub-content {
+    right: 20%;
   }
   body.home #main > section.rentals h3 {
     font-size: 48px;

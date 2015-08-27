@@ -561,12 +561,8 @@ body.home #main > section.location .section-content {
   top: 22%;
 }
 body.home #main > section.rentals .subsection.phaseone {
-  background-position: 20% 100%;
+  background-position: 20% 50%;
   background-size: 32%;
-}
-body.home #main > section.rentals .subsection.phaseone .sub-content {
-  top: 65%;
-  right: 15%;
 }
 body.home #main > section.rentals .subsection.canon {
   background-size: 45%;
