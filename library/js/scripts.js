@@ -134,6 +134,9 @@ jQuery(document).ready(function($) {
 	});
 	
 	win.resize(function () {
+		if (isHomePage) {
+			studioImageMobileAdjustment();
+		}
 		waitForFinalEvent( function() {
 			adminBarMove = $('#wpadminbar').outerHeight()-1;
 			mobileDeviceBodyClass();
@@ -234,6 +237,21 @@ jQuery(document).ready(function($) {
 			scrolling = false;
 		});
 	}
+	
+	// messes with layout of studio image depending on size of browser
+	function studioImageMobileAdjustment() {
+		var studioShell = $('#studio .bg-shell');
+		var shellRatio = mobileDeviceType() == 'mobile' ? 41 / 36 : 11 / 7;
+		if (mobileDeviceType() == 'mobile' || mobileDeviceType() == 'tablet') {
+			if (studioShell.width() / studioShell.height() > shellRatio) {
+				studioShell.addClass('landscape');
+			} else {
+				studioShell.removeClass('landscape');
+			}
+		} else {
+			studioShell.removeClass('landscape');
+		}
+	}
 
 	// hides or shows the site title, depending on which section is visible, and how far from being even with the top of the page it is
 	function homePageScrollBehavior() {
@@ -263,6 +281,7 @@ jQuery(document).ready(function($) {
 	if (isHomePage) {
 		homePageScrollBehavior();
 		scrollToSection(getActiveSection());
+		studioImageMobileAdjustment();
 	}
 	
 	// Hide wp admin bar

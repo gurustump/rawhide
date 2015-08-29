@@ -1186,6 +1186,10 @@ body.home {
 			&.studio {
 				.bg-shell {
 					background-position:1% 100%;
+					&.landscape {
+						background-position:20% 80%;
+						background-size:cover;
+					}
 				}
 				h2 {
 					background:url(../images/divider.png) no-repeat 0 100%;
@@ -1209,6 +1213,7 @@ body.home {
 				}
 			}
 			&.rentals {
+				padding-bottom:20px;
 				.bg-shell {
 					display:none;
 				}	
@@ -1216,7 +1221,7 @@ body.home {
 					padding:90px 0 0;
 				}
 				.subsection {
-					padding:300px 20px 0;
+					padding:280px 20px 0;
 					&.phaseone {
 						background:url(../images/bg-images/camera-phaseone-1200.jpg) no-repeat 50% 81px / 73%;
 					}
@@ -1317,5 +1322,14 @@ body.home {
 				}
 			}
 		}
-	}
+	}/*
+	&.mobile {
+		#main {
+			& > section.studio {
+				.bg-shell {
+					background:url(../images/bg-images/bg-studio-package-1062.jpg) no-repeat 50% 50% / cover !important;
+				}
+			}
+		}
+	}*/
 }

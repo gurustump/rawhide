@@ -115,3 +115,22 @@ do they need tweaking?
 	}
 } /* end .footer-links */
 
+body.home {
+	#main {
+		& > section {
+			&.rentals {
+				.subsection {
+					&.phaseone {
+						padding-top:320px;
+						background-size:60%;
+					}
+					&.canon {
+						padding-top:320px;
+						background-size:80%;
+						background-position:40% 32px;
+					}
+				}
+			}
+		}
+	}
+}

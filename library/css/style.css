@@ -2217,6 +2217,18 @@ html body.hide-admin-bar div#wpadminbar {
   display: none;
 }
 
+body.home {
+ /*
+&.mobile {
+	#main {
+		& > section.studio {
+			.bg-shell {
+				background:url(../images/bg-images/bg-studio-package-1062.jpg) no-repeat 50% 50% / cover !important;
+			}
+		}
+	}
+}*/
+}
 body.home #container, body.home #content, body.home #main {
   height: 100%;
 }
@@ -2300,6 +2312,10 @@ body.home #main > section .bg-shell {
 body.home #main > section.studio .bg-shell {
   background-position: 1% 100%;
 }
+body.home #main > section.studio .bg-shell.landscape {
+  background-position: 20% 80%;
+  background-size: cover;
+}
 body.home #main > section.studio h2 {
   background: url(../images/divider.png) no-repeat 0 100%;
   background-size: 147px;
@@ -2316,6 +2332,9 @@ body.home #main > section.hide-sitename .section-content {
   height: 100%;
   position: relative;
 }
+body.home #main > section.rentals {
+  padding-bottom: 20px;
+}
 body.home #main > section.rentals .bg-shell {
   display: none;
 }
@@ -2323,7 +2342,7 @@ body.home #main > section.rentals .section-content {
   padding: 90px 0 0;
 }
 body.home #main > section.rentals .subsection {
-  padding: 300px 20px 0;
+  padding: 280px 20px 0;
 }
 body.home #main > section.rentals .subsection.phaseone {
   background: url(../images/bg-images/camera-phaseone-1200.jpg) no-repeat 50% 81px/73%;
@@ -2507,6 +2526,15 @@ tweeners.
   do they need tweaking?
   */
   /* end .footer-links */
+  body.home #main > section.rentals .subsection.phaseone {
+    padding-top: 320px;
+    background-size: 60%;
+  }
+  body.home #main > section.rentals .subsection.canon {
+    padding-top: 320px;
+    background-size: 80%;
+    background-position: 40% 32px;
+  }
 }
 /*********************
 TABLET & SMALLER LAPTOPS
@@ -2950,7 +2978,7 @@ you can add resource intensive styles.
     margin-top: 15px;
   }
   body.home #main > section.studio .bg-shell {
-    background-position: 50% 50%;
+    background-position: 30% 50%;
     background-size: cover;
   }
   body.home #main > section.studio h2 {
