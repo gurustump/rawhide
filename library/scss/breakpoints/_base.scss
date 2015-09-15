@@ -92,10 +92,12 @@ LINK STYLES
 
 a, a:visited {
 	color: $link-color;
+	outline:none;
 
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-hover;
+		outline:none;
 	}
 
 	/* on click */

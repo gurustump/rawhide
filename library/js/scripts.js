@@ -112,6 +112,14 @@ jQuery(document).ready(function($) {
 	var win = $(window);
 	var scrolling = false;
 	var initialScroll = true;
+	
+	console.log(window.GoogleAnalyticsObject)
+	
+	$('#contact .contact > a, #contact .ratesheet > a').click(function() {
+		var downloadType = $(this).parent().hasClass('contact') ? 'vCard' : 'Rate Sheet';
+		console.log(downloadType);
+		ga('send', 'event', 'link', 'download', downloadType);
+	});
 
     if (typeof isHomePage === "undefined") { isHomePage = $('body').hasClass('home') };
     /*

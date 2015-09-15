@@ -1447,12 +1447,14 @@ LINK STYLES
 *********************/
 a, a:visited {
   color: #f01d4f;
+  outline: none;
   /* on hover */
   /* on click */
   /* mobile tap color */
 }
 a:hover, a:focus, a:visited:hover, a:visited:focus {
   color: #d10e3c;
+  outline: none;
 }
 a:link, a:visited:link {
   /*

@@ -436,4 +436,15 @@ add_action('wp_enqueue_scripts', 'bones_fonts');
 
 require_once( 'cmb-functions.php' );
 
+// root path shortcode
+function root_path_shortcode() {
+	return get_bloginfo('url') . '/';
+}
+add_shortcode('root_path', 'root_path_shortcode');
+
+function stylesheet_path_shortcode() {
+	return get_stylesheet_directory_uri() . '/';
+}
+add_shortcode('stylesheet_path', 'stylesheet_path_shortcode');
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
