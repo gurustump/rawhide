@@ -2420,6 +2420,9 @@ body.home #main > section.contact .contact-items > li.email > * {
 body.home #main > section.contact .contact-items > li.telephone > * {
   background: url(../images/ic-phone.png) no-repeat 6px 50%/auto 30px;
 }
+body.home #main > section.contact .contact-items > li.contact > * {
+  background: url(../images/ic-contact.png) no-repeat 3px 50%/auto 30px;
+}
 body.home #main > section.contact .contact-items > li.ratesheet > * {
   background: url(../images/ic-pdf.png) no-repeat 0 50%/30px auto;
 }

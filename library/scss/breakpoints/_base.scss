@@ -1297,6 +1297,9 @@ body.home {
 						&.telephone > * {
 							background:url(../images/ic-phone.png) no-repeat 6px 50% / auto 30px;
 						}
+						&.contact > * {
+							background:url(../images/ic-contact.png) no-repeat 3px 50% / auto 30px;
+						}
 						&.ratesheet > * {
 							background:url(../images/ic-pdf.png) no-repeat 0 50% / 30px auto;
 						}
